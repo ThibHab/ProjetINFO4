@@ -1,3 +1,5 @@
 Downloaded from https://wokwi.com/projects/391689049599749121
 
 Simulate this project on https://wokwi.com
+
+Buttons are placeholder for brideges, In reality those bridges will be realised by manually plugging/depluuging cables on a table.
