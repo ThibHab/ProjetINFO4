@@ -1,0 +1,15 @@
+# Arduino-Cardinal interface for Cardinal project
+
+Python interface that reads all data sent from the Arduino (Uno) card, processes it and sends it to the Cardinal synthetiser application using MIDI messages.
+
+# How to use the interface
+
+- The controller used to send the MIDI messages can be modified, it can be retrieved on Cardinal by plugging the Cardinal MIDI Host CC output with the corresponding number.
+
+# Common configuration errors and how to fix
+
+- Use sudo to execute the Python file otherwise the port will send you denied permission error.
+- Do not open the serial terminal on the Arduino card or you will not be able to read data because the data will already be read on the Arduino terminal and nothing will remain for the system terminal.
+- Always use the same baud rate while configuring the port.
+- Be sure to put end of line marks while writing data on the Arduino card or issues may occur.
+- It is impossible to upload the code on the card while this program is started, each must be done separately while the other is not running.
