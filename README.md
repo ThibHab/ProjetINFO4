@@ -21,19 +21,25 @@ Semaine 2
     Définition du support physique : une carte Arduino permettant la connexion et la déconnexion des fils sur Cardinal.
     Modification des valeurs des potentiomètres sur le VCO à l'aide de potentiomètres physiques.
     Recherche sur l'interprétation des signaux MIDI par Cardinal et la manipulation à distance de celui-ci.
+    Découverte de JACK et du logiciel qjackctl pour tester la connectique entre les applications.
+
+Objectifs :
+
+    Décider de l'utilité de JACK dans le projet, voir s'il est possible de faire quelque chose partant de JACK
 
 Semaine 3
 
 Répartition des Tâches
 
-    Thibaut : Modification du code de Cardinal.
-    Yann : Utilisation et maîtrise du logiciel PipeWire pour modifier les E/S audio.
+    Thibaut : Modification du code de Cardinal, faire le lien entre Cardinal et l'interface avec JACK.
+    Yann : Découverte de PipeWire et qpwgraph, alternative plus récente à JACK et qjackctl pour modifier les E/S audio.
     Gwénolé : Mapping et programmation Arduino.
 
 Semaine 4
 
     Thibaut : Progrès dans la modification du code, mais compilation toujours infructueuse.
     Gwénolé : Réalisation du mapping et de la carte physique.
+    Yann : Abandon de l'idée d'utiliser JACK ou PipeWire, aucune utilité réelle pour le projet.
 
 Semaine 5
 
