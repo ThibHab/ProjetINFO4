@@ -1,0 +1,171 @@
+#include "plugin.hpp"
+#include "sapphire_widget.hpp"
+#include "sapphire_random.hpp"
+
+// Sapphire Hiss for VCV Rack 2, by Don Cross <cosinekitty@gmail.com>
+// https://github.com/cosinekitty/sapphire
+
+namespace Sapphire
+{
+    namespace Hiss
+    {
+        const int DefaultDimensions = 3;
+        const int NumOutputs = 10;
+
+        enum ParamId
+        {
+            CHANNEL_COUNT_PARAM,
+            PARAMS_LEN
+        };
+
+        enum InputId
+        {
+            INPUTS_LEN
+        };
+
+        enum OutputId
+        {
+            ENUMS(NOISE_OUTPUTS, NumOutputs),
+            OUTPUTS_LEN
+        };
+
+        enum LightId
+        {
+            AUDIO_MODE_BUTTON_LIGHT,
+            LIGHTS_LEN
+        };
+
+
+        struct ChannelCountQuantity : SapphireQuantity
+        {
+            int getDesiredChannelCount() const
+            {
+                int n = static_cast<int>(std::round(value));
+                return clamp(n, 1, 16);
+            }
+
+            std::string getDisplayValueString() override
+            {
+                return string::f("%d", getDesiredChannelCount());
+            }
+        };
+
+
+        struct ChannelCountSlider : ui::Slider
+        {
+            explicit ChannelCountSlider(ChannelCountQuantity *_quantity)
+            {
+                quantity = _quantity;
+                box.size.x = 200;
+            }
+        };
+
+        struct HissModule : SapphireModule
+        {
+            RandomVectorGenerator rand;
+            ChannelCountQuantity *channelCountQuantity{};
+
+            HissModule()
+                : SapphireModule(PARAMS_LEN)
+            {
+                config(PARAMS_LEN, INPUTS_LEN, OUTPUTS_LEN, LIGHTS_LEN);
+
+                for (int i = 0; i < NumOutputs; ++i)
+                    configOutput(NOISE_OUTPUTS + i, std::string("Noise ") + std::to_string(i + 1));
+
+                channelCountQuantity = configParam<ChannelCountQuantity>(
+                    CHANNEL_COUNT_PARAM,
+                    0.5f,
+                    16.5f,
+                    DefaultDimensions,
+                    "Output channels"
+                );
+
+                initialize();
+            }
+
+            int dimensions() const
+            {
+                return channelCountQuantity->getDesiredChannelCount();
+            }
+
+            void initialize()
+            {
+                channelCountQuantity->initialize();
+            }
+
+            void onReset(const ResetEvent& e) override
+            {
+                Module::onReset(e);
+                initialize();
+            }
+
+            json_t* dataToJson() override
+            {
+                json_t* root = SapphireModule::dataToJson();
+                json_object_set_new(root, "channels", json_integer(dimensions()));
+                return root;
+            }
+
+            void dataFromJson(json_t* root) override
+            {
+                SapphireModule::dataFromJson(root);
+                json_t* channels = json_object_get(root, "channels");
+                if (json_is_integer(channels))
+                {
+                    json_int_t n = json_integer_value(channels);
+                    if (n >= 1 && n <= 16)
+                        channelCountQuantity->value = static_cast<float>(n);
+                }
+            }
+
+            void process(const ProcessArgs& args) override
+            {
+                const int dim = dimensions();
+                for (int i = 0; i < NumOutputs; ++i)
+                {
+                    Output& op = outputs[NOISE_OUTPUTS + i];
+                    // Reduce CPU overhead by generating noise to connected output ports only.
+                    if (op.isConnected())
+                    {
+                        op.setChannels(dim);
+                        for (int d = 0; d < dim; ++d)
+                            op.setVoltage(rand.next(), d);
+                    }
+                }
+            }
+        };
+
+        struct HissWidget : SapphireReloadableModuleWidget
+        {
+            HissModule *hissModule;
+
+            explicit HissWidget(HissModule* module)
+                : SapphireReloadableModuleWidget(asset::plugin(pluginInstance, "res/hiss.svg"))
+                , hissModule(module)
+            {
+                setModule(module);
+
+                for (int i = 0; i < NumOutputs; ++i)
+                    addSapphireOutput(NOISE_OUTPUTS + i, std::string("random_output_") + std::to_string(i + 1));
+
+                reloadPanel();
+            }
+
+            void appendContextMenu(Menu* menu) override
+            {
+                if (hissModule != nullptr)
+                {
+                    menu->addChild(new MenuSeparator);
+                    menu->addChild(new ChannelCountSlider(hissModule->channelCountQuantity));
+                }
+            }
+        };
+    }
+}
+
+
+Model* modelHiss = createSapphireModel<Sapphire::Hiss::HissModule, Sapphire::Hiss::HissWidget>(
+    "Hiss",
+    Sapphire::VectorRole::None
+);

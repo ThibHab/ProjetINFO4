@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Sapphire engines standalone test: running ..."
+rm -f test/*.wav test/lohifilter.txt bin/{elastika,tubeunit,nucleus}
+echo "Compiling..."
+./build || exit 1
+echo "Running filter test..."
+./bin/lohifilter > test/lohifilter.txt || exit 1
+echo "Running Elastika..."
+./bin/elastika || exit 1
+echo "Running TubeUnit..."
+./bin/tubeunit || exit 1
+echo "Running Nucleus..."
+./bin/nucleus || exit 1
+ls -l test/*.wav test/lohifilter.txt
+diff {test,correct}/lohifilter.txt || exit 1
+diff {test,correct}/elastika.wav || exit 1
+diff {test,correct}/tubeunit.wav || exit 1
+diff {test,correct}/nucleus.wav || exit 1
+echo "Sapphire engines standalone test: PASS"
+exit 0

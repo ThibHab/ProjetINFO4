@@ -1,0 +1,35 @@
+{
+	"slug": "AnimatedCircuits",
+	"name": "Animated Circuits",
+	"version": "2.2.0",
+	"brand": "Animated Circuits",
+	"author": "Animated Circuits",
+	"license": "GPL-3.0-or-later",
+	"authorEmail": "animatedcircuits@gmail.com",
+	"pluginUrl": "https://github.com/AnimatedCircuits/RackModules",
+	"authorUrl": "",
+	"manualUrl": "https://github.com/AnimatedCircuits/RackModules/wiki",
+	"sourceUrl": "https://github.com/AnimatedCircuits/RackModules",
+  	"changelogUrl": "",
+	"modules": [
+		{
+			"slug": "ACFolding",
+			"name": "Folding",
+			"description": "Wavefolder",
+			"tags": [
+				"Waveshaper",
+				"Polyphonic"
+			]
+		},
+		{
+			"slug": "ACLFold",
+			"name": "LFold",
+			"description": "Folded LFO",
+			"tags": [
+				"Low-frequency oscillator",
+				"Waveshaper",
+				"Polyphonic"
+			]
+		}
+	]
+}

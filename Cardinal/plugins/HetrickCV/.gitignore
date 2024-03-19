@@ -1,0 +1,10 @@
+.DS_Store
+build/
+dist/
+plugin.dylib
+plugin-arm64.dylib
+plugin.so
+plugin.dll
+.idea/
+dep/
+cmake-build*

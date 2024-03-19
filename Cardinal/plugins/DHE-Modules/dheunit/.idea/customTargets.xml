@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="684d1f70-b1c9-48b9-ba06-f3325291645d" name="runner" defaultType="MAKE">
+      <configuration id="3f6dad0a-c57b-4515-81a9-feeda58e802f" name="runner">
+        <build type="MAKE">
+          <make targetName="build/runtests" />
+        </build>
+        <clean type="MAKE">
+          <make targetName="clean" />
+        </clean>
+      </configuration>
+    </target>
+  </component>
+</project>

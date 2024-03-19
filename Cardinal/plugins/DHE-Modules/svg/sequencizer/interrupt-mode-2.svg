@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" viewBox="-4.325000 -1.915222 8.650000 3.830444" height="3.830444mm" width="8.650000mm">
+  <defs/>
+  <g>
+    <rect x="-4.2" y="-1.7902222222222222" width="8.4" height="3.5804444444444443" rx="0.5" ry="0.5" fill="#efedeb" stroke="#18191c" stroke-width="0.25"/>
+    <g style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#18191c">
+      <path d="m -1.6904521,0.067564 c 0,0.47650402 0.348488,0.81788003 0.82499205,0.81788003 0.47887468,0 0.82736269,-0.34137601 0.82736269,-0.81788003 0,-0.47650401 -0.34848801,-0.81788002 -0.82736269,-0.81788002 -0.47650405,0 -0.82499205,0.34137601 -0.82499205,0.81788002 z m 1.3062374,0 c 0,0.29396268 -0.18965334,0.51917602 -0.48124535,0.51917602 -0.29159205,0 -0.47887465,-0.22521334 -0.47887465,-0.51917602 0,-0.29633334 0.1872826,-0.51917601 0.47887465,-0.51917601 0.29159201,0 0.48124535,0.22284267 0.48124535,0.51917601 z" style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#18191c"/>
+      <path d="M 1.2909577,0.85699603 H 1.6157391 V -0.72423869 H 1.2791044 V 0.29988935 L 0.54656839,-0.72423869 H 0.20045104 v 1.58123472 h 0.33663468 v -1.0620587 z" style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#18191c"/>
+    </g>
+  </g>
+</svg>

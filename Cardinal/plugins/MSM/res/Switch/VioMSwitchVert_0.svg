@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20.641109"
+   height="14"
+   viewBox="0 0 5.4612934 3.7041667"
+   version="1.1"
+   id="svg56722"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="VioMSwitchVert_0.svg">
+  <defs
+     id="defs56716" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="15.839192"
+     inkscape:cx="-5.9856433"
+     inkscape:cy="8.4811396"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1033"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata56719">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.423779,-65.096333)">
+    <g
+       id="g824"
+       transform="rotate(90,37.275862,66.948417)">
+      <g
+         transform="rotate(180,34.470581,65.413951)"
+         id="g844">
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.10769735;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+           id="rect860"
+           width="3.7041667"
+           height="5.4612646"
+           x="29.813217"
+           y="62.027416"
+           rx="1.8520833"
+           ry="1.8520833" />
+        <rect
+           style="opacity:1;fill:#290e29;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.12120448;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+           id="rect862"
+           width="3.2936096"
+           height="4.9752254"
+           x="30.018497"
+           y="62.270435"
+           rx="1.6468048"
+           ry="1.6468048" />
+        <g
+           transform="translate(-0.35465256,-3.347059)"
+           id="g868">
+          <path
+             d="m 33.659078,67.202576 a 1.6421717,1.5869129 0 0 1 -1.640151,1.586911 1.6421717,1.5869129 0 0 1 -1.644187,-1.583006 1.6421717,1.5869129 0 0 1 1.636105,-1.590807 1.6421717,1.5869129 0 0 1 1.648214,1.579091"
+             sodipodi:open="true"
+             sodipodi:end="6.2782635"
+             sodipodi:start="0"
+             sodipodi:ry="1.5869129"
+             sodipodi:rx="1.6421717"
+             sodipodi:cy="67.202576"
+             sodipodi:cx="32.016907"
+             sodipodi:type="arc"
+             id="path864"
+             style="opacity:1;fill:#969696;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.12638131;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:1.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill" />
+          <path
+             inkscape:connector-curvature="0"
+             style="fill:none;stroke:#3c3c3c;stroke-width:0.2974664px;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1"
+             d="m 32.017739,65.740641 c 0.828476,0 1.49486,0.646009 1.49486,1.462024 0.01803,0.799013 -0.666384,1.445023 -1.476848,1.445023 -0.828475,0.017 -1.512869,-0.64601 -1.512869,-1.445023 0,-0.799014 0.666384,-1.462024 1.494857,-1.462024"
+             id="path832" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

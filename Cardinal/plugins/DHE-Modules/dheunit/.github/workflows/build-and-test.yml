@@ -1,0 +1,32 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+      - wip/**
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - os: ubuntu-16.04
+            compiler: cc
+          - os: macos-latest
+            compiler: cc
+          - os: windows-latest
+            compiler: gcc
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        env:
+          CC: ${{ matrix.config.compiler }}
+        run: |
+          make vtest

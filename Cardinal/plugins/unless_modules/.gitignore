@@ -1,0 +1,5 @@
+*.so
+*.dylib
+*.dll
+build/
+unless_modules/

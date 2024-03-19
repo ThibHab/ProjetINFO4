@@ -1,0 +1,9 @@
+prefix=X-PREFIX-X
+libdir=X-LIBDIR-X
+includedir=X-INCLUDEDIR-X
+
+Name: carla-native-plugin
+Version: X-VERSION-X
+Description: Carla Native Plugin
+Libs: -Wl,-rpath,${libdir}/carla -L${libdir}/carla -lcarla_native-plugin
+Cflags: -I${includedir}/carla -I${includedir}/carla/includes

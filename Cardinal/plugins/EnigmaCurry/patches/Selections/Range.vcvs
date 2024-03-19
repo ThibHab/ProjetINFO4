@@ -1,0 +1,562 @@
+{
+  "modules": [
+    {
+      "id": 1196008789863343,
+      "plugin": "EnigmaCurry",
+      "model": "Pulse",
+      "version": "2.0.8",
+      "params": [
+        {
+          "value": 4.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 6696399147007071,
+      "rightModuleId": 3385811885691879,
+      "data": {
+        "clockDivider": 4,
+        "trigQuantize": 1,
+        "onRetriggerAction": 0
+      },
+      "pos": [
+        61,
+        1
+      ]
+    },
+    {
+      "id": 4867338022756973,
+      "plugin": "AaronStatic",
+      "model": "ChordCV",
+      "version": "2.0.0",
+      "params": [
+        {
+          "value": -0.39518091082572937,
+          "id": 0
+        },
+        {
+          "value": -1.966266393661499,
+          "id": 1
+        },
+        {
+          "value": 0.0,
+          "id": 2
+        },
+        {
+          "value": 0.0,
+          "id": 3
+        }
+      ],
+      "rightModuleId": 5887621732862251,
+      "pos": [
+        62,
+        2
+      ]
+    },
+    {
+      "id": 7551301234876854,
+      "plugin": "ImpromptuModular",
+      "model": "Four-View",
+      "version": "2.0.3",
+      "params": [
+        {
+          "value": 0.0,
+          "id": 0
+        }
+      ],
+      "data": {
+        "panelTheme": 0,
+        "panelContrast": 220.0,
+        "allowPolyOverride": 1,
+        "showSharp": true
+      },
+      "pos": [
+        80,
+        1
+      ]
+    },
+    {
+      "id": 3385811885691879,
+      "plugin": "EnigmaCurry",
+      "model": "Pulse",
+      "version": "2.0.8",
+      "params": [
+        {
+          "value": 4.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 1196008789863343,
+      "rightModuleId": 5940205954092378,
+      "data": {
+        "clockDivider": 4,
+        "trigQuantize": 1,
+        "onRetriggerAction": 0
+      },
+      "pos": [
+        64,
+        1
+      ]
+    },
+    {
+      "id": 785568879359842,
+      "plugin": "Bogaudio",
+      "model": "Bogaudio-Bool",
+      "version": "2.0.39",
+      "params": [],
+      "leftModuleId": 6246000479724144,
+      "rightModuleId": 5320754414885773,
+      "data": {},
+      "pos": [
+        52,
+        1
+      ]
+    },
+    {
+      "id": 5320754414885773,
+      "plugin": "Bogaudio",
+      "model": "Bogaudio-Bool",
+      "version": "2.0.39",
+      "params": [],
+      "leftModuleId": 785568879359842,
+      "rightModuleId": 6696399147007071,
+      "data": {},
+      "pos": [
+        55,
+        1
+      ]
+    },
+    {
+      "id": 5887621732862251,
+      "plugin": "EnigmaCurry",
+      "model": "Range",
+      "version": "2.0.8",
+      "params": [
+        {
+          "value": 0.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 4867338022756973,
+      "rightModuleId": 647525583025946,
+      "data": {
+        "currentRangeMode": 0
+      },
+      "pos": [
+        70,
+        2
+      ]
+    },
+    {
+      "id": 6696399147007071,
+      "plugin": "EnigmaCurry",
+      "model": "Pulse",
+      "version": "2.0.8",
+      "params": [
+        {
+          "value": 4.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 5320754414885773,
+      "rightModuleId": 1196008789863343,
+      "data": {
+        "clockDivider": 4,
+        "trigQuantize": 1,
+        "onRetriggerAction": 0
+      },
+      "pos": [
+        58,
+        1
+      ]
+    },
+    {
+      "id": 6246000479724144,
+      "plugin": "Core",
+      "model": "Notes",
+      "version": "2.1.2",
+      "params": [],
+      "leftModuleId": 1413515150227092,
+      "rightModuleId": 785568879359842,
+      "data": {
+        "text": "Four Pulse modules create a 16 bar loop. The RISE trigger is used to select a discrete pitch from Range set to 1v/octave (single octave) range.\n\nIn parallel, a second Range module is set for 10v range and selects the same pitches from the ChordCV module. \n\nCompare the pitches on Four-View -  between the two processes, notice the octaves are not identical because Range has a single octave range whereas ChordCV goes lower.\n\nThe final END trigger loops back to the first TRIG. The RUN of clocked is ORd with this trig in Bool. Everything starts on CLKD run. The other Bool device is used as a sample buffer for the clock to time it in sync with the first TRIG."
+      },
+      "pos": [
+        36,
+        1
+      ]
+    },
+    {
+      "id": 647525583025946,
+      "plugin": "MockbaModular",
+      "model": "Selectah",
+      "version": "2.0.0",
+      "params": [
+        {
+          "value": 0.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 5887621732862251,
+      "pos": [
+        76,
+        2
+      ]
+    },
+    {
+      "id": 1413515150227092,
+      "plugin": "ImpromptuModular",
+      "model": "Clocked-Clkd",
+      "version": "2.0.3",
+      "params": [
+        {
+          "value": 0.0,
+          "id": 0
+        },
+        {
+          "value": 0.0,
+          "id": 1
+        },
+        {
+          "value": 0.0,
+          "id": 2
+        },
+        {
+          "value": 120.0,
+          "id": 3
+        },
+        {
+          "value": 0.0,
+          "id": 4
+        },
+        {
+          "value": 0.0,
+          "id": 5
+        },
+        {
+          "value": 0.0,
+          "id": 6
+        },
+        {
+          "value": 0.0,
+          "id": 7
+        },
+        {
+          "value": 0.0,
+          "id": 8
+        },
+        {
+          "value": 0.0,
+          "id": 9
+        }
+      ],
+      "rightModuleId": 6246000479724144,
+      "data": {
+        "panelTheme": 0,
+        "panelContrast": 220.0,
+        "running": false,
+        "bpmDetectionMode": false,
+        "resetOnStartStop": 5,
+        "ppqn": 4,
+        "resetClockOutputsHigh": false,
+        "momentaryRunInput": false,
+        "displayIndex": 0,
+        "trigOuts": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "clockMaster": -1
+      },
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 3368021137103774,
+      "plugin": "EnigmaCurry",
+      "model": "Range",
+      "version": "2.0.8",
+      "params": [
+        {
+          "value": 0.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 5940205954092378,
+      "data": {
+        "currentRangeMode": 1
+      },
+      "pos": [
+        70,
+        1
+      ]
+    },
+    {
+      "id": 5940205954092378,
+      "plugin": "EnigmaCurry",
+      "model": "Pulse",
+      "version": "2.0.8",
+      "params": [
+        {
+          "value": 4.0,
+          "id": 0
+        }
+      ],
+      "leftModuleId": 3385811885691879,
+      "rightModuleId": 3368021137103774,
+      "data": {
+        "clockDivider": 4,
+        "trigQuantize": 1,
+        "onRetriggerAction": 0
+      },
+      "pos": [
+        67,
+        1
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 2732500714827479,
+      "outputModuleId": 6696399147007071,
+      "outputId": 1,
+      "inputModuleId": 1196008789863343,
+      "inputId": 0,
+      "color": "#8c1889"
+    },
+    {
+      "id": 6717585411024838,
+      "outputModuleId": 1196008789863343,
+      "outputId": 1,
+      "inputModuleId": 3385811885691879,
+      "inputId": 0,
+      "color": "#8c1889"
+    },
+    {
+      "id": 5870624068766157,
+      "outputModuleId": 1413515150227092,
+      "outputId": 5,
+      "inputModuleId": 5320754414885773,
+      "inputId": 1,
+      "color": "#8c1889"
+    },
+    {
+      "id": 4829230801694746,
+      "outputModuleId": 5320754414885773,
+      "outputId": 1,
+      "inputModuleId": 6696399147007071,
+      "inputId": 0,
+      "color": "#8c1889"
+    },
+    {
+      "id": 5660094827337239,
+      "outputModuleId": 785568879359842,
+      "outputId": 1,
+      "inputModuleId": 6696399147007071,
+      "inputId": 2,
+      "color": "#0f8df4"
+    },
+    {
+      "id": 8184327469476156,
+      "outputModuleId": 785568879359842,
+      "outputId": 1,
+      "inputModuleId": 1196008789863343,
+      "inputId": 2,
+      "color": "#0f8df4"
+    },
+    {
+      "id": 208133970453725,
+      "outputModuleId": 1413515150227092,
+      "outputId": 0,
+      "inputModuleId": 785568879359842,
+      "inputId": 0,
+      "color": "#0f8df4"
+    },
+    {
+      "id": 981232619213069,
+      "outputModuleId": 4867338022756973,
+      "outputId": 0,
+      "inputModuleId": 647525583025946,
+      "inputId": 1,
+      "color": "#f9b130"
+    },
+    {
+      "id": 5565658169588385,
+      "outputModuleId": 4867338022756973,
+      "outputId": 1,
+      "inputModuleId": 647525583025946,
+      "inputId": 2,
+      "color": "#f9b130"
+    },
+    {
+      "id": 1706090497776830,
+      "outputModuleId": 4867338022756973,
+      "outputId": 2,
+      "inputModuleId": 647525583025946,
+      "inputId": 3,
+      "color": "#f9b130"
+    },
+    {
+      "id": 8355312261742883,
+      "outputModuleId": 4867338022756973,
+      "outputId": 3,
+      "inputModuleId": 647525583025946,
+      "inputId": 4,
+      "color": "#f9b130"
+    },
+    {
+      "id": 7816609117564266,
+      "outputModuleId": 5887621732862251,
+      "outputId": 0,
+      "inputModuleId": 647525583025946,
+      "inputId": 0,
+      "color": "#8c1889"
+    },
+    {
+      "id": 3113890103778683,
+      "outputModuleId": 647525583025946,
+      "outputId": 0,
+      "inputModuleId": 7551301234876854,
+      "inputId": 1,
+      "color": "#f9b130"
+    },
+    {
+      "id": 7687538070141137,
+      "outputModuleId": 1413515150227092,
+      "outputId": 4,
+      "inputModuleId": 6696399147007071,
+      "inputId": 1,
+      "color": "#8c1889"
+    },
+    {
+      "id": 5420281328618536,
+      "outputModuleId": 1413515150227092,
+      "outputId": 4,
+      "inputModuleId": 1196008789863343,
+      "inputId": 1,
+      "color": "#8c1889"
+    },
+    {
+      "id": 3486096995450722,
+      "outputModuleId": 1413515150227092,
+      "outputId": 4,
+      "inputModuleId": 3385811885691879,
+      "inputId": 1,
+      "color": "#8c1889"
+    },
+    {
+      "id": 3282772163849535,
+      "outputModuleId": 3368021137103774,
+      "outputId": 0,
+      "inputModuleId": 7551301234876854,
+      "inputId": 0,
+      "color": "#f9b130"
+    },
+    {
+      "id": 6018128996535801,
+      "outputModuleId": 5940205954092378,
+      "outputId": 1,
+      "inputModuleId": 5320754414885773,
+      "inputId": 0,
+      "color": "#8c1889"
+    },
+    {
+      "id": 8049262442400958,
+      "outputModuleId": 3385811885691879,
+      "outputId": 1,
+      "inputModuleId": 5940205954092378,
+      "inputId": 0,
+      "color": "#8c1889"
+    },
+    {
+      "id": 5296977512794170,
+      "outputModuleId": 1413515150227092,
+      "outputId": 4,
+      "inputModuleId": 5940205954092378,
+      "inputId": 1,
+      "color": "#8c1889"
+    },
+    {
+      "id": 311065547132800,
+      "outputModuleId": 785568879359842,
+      "outputId": 1,
+      "inputModuleId": 3385811885691879,
+      "inputId": 2,
+      "color": "#0f8df4"
+    },
+    {
+      "id": 2914891684370519,
+      "outputModuleId": 785568879359842,
+      "outputId": 1,
+      "inputModuleId": 5940205954092378,
+      "inputId": 2,
+      "color": "#0f8df4"
+    },
+    {
+      "id": 6076945251408829,
+      "outputModuleId": 6696399147007071,
+      "outputId": 2,
+      "inputModuleId": 3368021137103774,
+      "inputId": 8,
+      "color": "#8c1889"
+    },
+    {
+      "id": 7206283045727509,
+      "outputModuleId": 5940205954092378,
+      "outputId": 2,
+      "inputModuleId": 3368021137103774,
+      "inputId": 6,
+      "color": "#8c1889"
+    },
+    {
+      "id": 6397488637389658,
+      "outputModuleId": 1196008789863343,
+      "outputId": 2,
+      "inputModuleId": 3368021137103774,
+      "inputId": 12,
+      "color": "#8c1889"
+    },
+    {
+      "id": 4302417780334099,
+      "outputModuleId": 3385811885691879,
+      "outputId": 2,
+      "inputModuleId": 3368021137103774,
+      "inputId": 3,
+      "color": "#8c1889"
+    },
+    {
+      "id": 3342799543307162,
+      "outputModuleId": 6696399147007071,
+      "outputId": 2,
+      "inputModuleId": 5887621732862251,
+      "inputId": 1,
+      "color": "#8c1889"
+    },
+    {
+      "id": 5275037085195432,
+      "outputModuleId": 1196008789863343,
+      "outputId": 2,
+      "inputModuleId": 5887621732862251,
+      "inputId": 4,
+      "color": "#8c1889"
+    },
+    {
+      "id": 33254475009582,
+      "outputModuleId": 3385811885691879,
+      "outputId": 2,
+      "inputModuleId": 5887621732862251,
+      "inputId": 7,
+      "color": "#8c1889"
+    },
+    {
+      "id": 7356403381488751,
+      "outputModuleId": 5940205954092378,
+      "outputId": 2,
+      "inputModuleId": 5887621732862251,
+      "inputId": 11,
+      "color": "#8c1889"
+    }
+  ]
+}

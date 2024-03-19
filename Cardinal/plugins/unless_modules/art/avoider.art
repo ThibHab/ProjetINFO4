@@ -1,0 +1,320 @@
+{
+  "layout": {
+    "slug": "avoider",
+    "width": 7,
+    "params": [
+      {
+        "box": {
+          "pos": [
+            52.5,
+            155.0
+          ],
+          "size": [
+            26.0,
+            23.0
+          ]
+        },
+        "id": 0,
+        "type": 2,
+        "name": "avoid interval 1 steps (m2)"
+      },
+      {
+        "box": {
+          "pos": [
+            82.5,
+            155.0
+          ],
+          "size": [
+            26.0,
+            23.0
+          ]
+        },
+        "id": 1,
+        "type": 2,
+        "name": "avoid interval 2 steps (M2)"
+      },
+      {
+        "box": {
+          "pos": [
+            22.5,
+            181.25
+          ],
+          "size": [
+            26.0,
+            23.0
+          ]
+        },
+        "id": 2,
+        "type": 2,
+        "name": "avoid interval 3 steps (m3)"
+      },
+      {
+        "box": {
+          "pos": [
+            52.5,
+            181.25
+          ],
+          "size": [
+            26.0,
+            23.0
+          ]
+        },
+        "id": 3,
+        "type": 2,
+        "name": "avoid interval 4 steps (M3)"
+      },
+      {
+        "box": {
+          "pos": [
+            82.5,
+            181.25
+          ],
+          "size": [
+            26.0,
+            23.0
+          ]
+        },
+        "id": 4,
+        "type": 2,
+        "name": "avoid interval 5 steps (P4)"
+      },
+      {
+        "box": {
+          "pos": [
+            22.5,
+            155.0
+          ],
+          "size": [
+            26.0,
+            23.0
+          ]
+        },
+        "id": 5,
+        "type": 2,
+        "name": "avoid interval 6 steps (TT)"
+      },
+      {
+        "box": {
+          "pos": [
+            52.5,
+            50.0
+          ],
+          "size": [
+            45.0,
+            45.0
+          ]
+        },
+        "id": 6,
+        "type": 2,
+        "name": "harmony"
+      },
+      {
+        "box": {
+          "pos": [
+            82.5,
+            98.75
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 7,
+        "type": 2,
+        "name": "avoided count"
+      },
+      {
+        "box": {
+          "pos": [
+            52.5,
+            222.5
+          ],
+          "size": [
+            24.0,
+            23.0
+          ]
+        },
+        "id": 8,
+        "type": 2,
+        "name": "keep chord notes"
+      }
+    ],
+    "inputs": [
+      {
+        "box": {
+          "pos": [
+            22.5,
+            305.0
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 0,
+        "type": 0,
+        "name": "input : 0"
+      },
+      {
+        "box": {
+          "pos": [
+            22.5,
+            342.5
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 1,
+        "type": 0,
+        "name": "input : 1"
+      },
+      {
+        "box": {
+          "pos": [
+            22.5,
+            222.5
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 2,
+        "type": 0,
+        "name": "input : 2"
+      },
+      {
+        "box": {
+          "pos": [
+            22.5,
+            260.0
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 3,
+        "type": 0,
+        "name": "input : 3"
+      },
+      {
+        "box": {
+          "pos": [
+            22.5,
+            98.75
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 4,
+        "type": 0,
+        "name": "input : 4"
+      },
+      {
+        "box": {
+          "pos": [
+            52.5,
+            98.75
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 5,
+        "type": 0,
+        "name": "input : 5"
+      }
+    ],
+    "outputs": [
+      {
+        "box": {
+          "pos": [
+            82.5,
+            305.0
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 0,
+        "type": 1,
+        "name": "output : 0"
+      },
+      {
+        "box": {
+          "pos": [
+            82.5,
+            342.5
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 1,
+        "type": 1,
+        "name": "output : 1"
+      },
+      {
+        "box": {
+          "pos": [
+            52.5,
+            305.0
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 2,
+        "type": 1,
+        "name": "output : 2"
+      },
+      {
+        "box": {
+          "pos": [
+            82.5,
+            260.0
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 3,
+        "type": 1,
+        "name": "output : 3"
+      },
+      {
+        "box": {
+          "pos": [
+            82.5,
+            222.5
+          ],
+          "size": [
+            24.0,
+            24.0
+          ]
+        },
+        "id": 4,
+        "type": 1,
+        "name": "output : 4"
+      }
+    ],
+    "widgets": []
+  },
+  "layers": [
+    {
+      "labels": [],
+      "lineshapes": [],
+      "rectangles": []
+    }
+  ]
+}

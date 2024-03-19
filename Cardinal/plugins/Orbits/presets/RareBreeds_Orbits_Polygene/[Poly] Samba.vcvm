@@ -1,0 +1,41 @@
+{
+  "plugin": "RareBreeds_Orbits",
+  "model": "RareBreeds_Orbits_Polygene",
+  "version": "2.0.0",
+  "data": {
+    "channels": [
+      {
+        "length": 4.0,
+        "hits": 0.5,
+        "shift": 9.6361446380615234,
+        "variation": 0.5807228684425354,
+        "reverse": false,
+        "invert": false
+      },
+      {
+        "length": 16.0,
+        "hits": 0.35790321230888367,
+        "shift": 4.5939769744873047,
+        "variation": 0.27228918671607971,
+        "reverse": true,
+        "invert": false
+      },
+      {
+        "length": 16.0,
+        "hits": 0.74337345361709595,
+        "shift": 2.6891567707061768,
+        "variation": 0.0,
+        "reverse": false,
+        "invert": false
+      },
+      {
+        "length": 8.0,
+        "hits": 0.28192806243896484,
+        "shift": 1.7927713394165039,
+        "variation": 0.0,
+        "reverse": false,
+        "invert": false
+      }
+    ]
+  }
+}

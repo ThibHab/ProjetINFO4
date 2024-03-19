@@ -1,0 +1,57 @@
+2.0.8
+
+ * Transport: renders example display for module browser
+ * Transport: set default `On Start` action as `No action`. For the
+   intended default use, the reset signal means to stop. So it made
+   no sense to send stop on start.
+ * Adds Pulse module.
+ * Adds Range module.
+
+2.0.7
+
+ * Store the actual playCount as modulo 1000.
+ * Remove unused font references.
+ * Included utility for splitting a 16 channel .wav file recorded by
+   Lilac Looper into 8 separate stereo .wav files.
+ * Included 8 stereo channel looper patch.
+
+2.0.6
+
+ * Updated copyright headers across all cpp and hpp files to reflect dual license.
+ * Transport:
+   * Added labels to all inputs and outputs.
+
+2.0.5
+
+ * Transport:
+   * Added LOOP trigger output, pulsed at the start of every record length loop.
+   * playCount display is modulo 1000 so that it loops back to 0 after 999.
+
+2.0.4
+
+ * Changed slug to `EnigmaCurry`.
+
+ * Transport:
+   * Added external reset (stop) input.
+   * Added internal clock divider.
+   * Added play button selectable to be a toggle or idempotent.
+   * Tested working with MIDI-CV CLK and CLK/N for use in a DAW.
+   * Added configurable RESET for start and/or stop in menu.
+
+2.0.3
+
+ * Fix license name in plugin manifest: "GPL-3.0-or-later"
+ * Load fonts in the drawText call, rather than in the constructor.
+
+2.0.2
+
+ * Added Transport Looper example patch
+
+2.0.1
+
+ * Added Latch module
+ * Relicensed as GPLv3+
+
+2.0.0
+
+ * Added Transport module

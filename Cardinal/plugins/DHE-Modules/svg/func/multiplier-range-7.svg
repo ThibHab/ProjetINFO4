@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" viewBox="-3.625000 -1.915222 7.250000 3.830444" height="3.830444mm" width="7.250000mm">
+  <defs/>
+  <g>
+    <rect x="-3.5" y="-1.7902222222222222" width="7" height="3.5804444444444443" rx="0.5" ry="0.5" fill="#f0f3fa" stroke="#0044cc" stroke-width="0.25"/>
+    <g style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#0044cc">
+      <path d="m -2.577137,0.067564 c 0,0.40775468 0.2015067,0.81788003 0.654304,0.81788003 0.4504267,0 0.654304,-0.41012535 0.654304,-0.81788003 0,-0.40775468 -0.2038773,-0.81550935 -0.654304,-0.81550935 -0.4527973,0 -0.654304,0.40775467 -0.654304,0.81550935 z m 0.9648614,0 c 0,0.29159201 -0.085344,0.51917602 -0.3105574,0.51917602 -0.227584,0 -0.312928,-0.22758401 -0.312928,-0.51917602 0,-0.291592 0.085344,-0.51680535 0.312928,-0.51680535 0.2252134,0 0.3105574,0.22521335 0.3105574,0.51680535 z" style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#0044cc"/>
+      <path d="M -1.1188436,0.41131068 H 0.14472177 V 0.15527867 H -1.1188436 Z" style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#0044cc"/>
+      <path d="M 0.69649455,0.85699603 H 1.0354999 V -0.72423869 H 0.74153722 L 0.2436972,-0.224028 0.43572121,-0.02252133 0.69649455,-0.29040667 Z" style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#0044cc"/>
+      <path d="m 1.2705662,0.067564 c 0,0.40775468 0.2015067,0.81788003 0.654304,0.81788003 0.4504267,0 0.6543041,-0.41012535 0.6543041,-0.81788003 0,-0.40775468 -0.2038774,-0.81550935 -0.6543041,-0.81550935 -0.4527973,0 -0.654304,0.40775467 -0.654304,0.81550935 z m 0.9648614,0 c 0,0.29159201 -0.085344,0.51917602 -0.3105574,0.51917602 -0.227584,0 -0.312928,-0.22758401 -0.312928,-0.51917602 0,-0.291592 0.085344,-0.51680535 0.312928,-0.51680535 0.2252134,0 0.3105574,0.22521335 0.3105574,0.51680535 z" style="font-weight:bold;font-size:2.37067px;font-family:'Proxima Nova';dominant-baseline:middle;text-anchor:middle;fill:#0044cc"/>
+    </g>
+  </g>
+</svg>

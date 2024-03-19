@@ -1,0 +1,2203 @@
+{
+  "version": "1.1.6",
+  "modules": [
+    {
+      "id": 1,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "Scope",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 14.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 50,
+      "data": {
+        "lissajous": 1,
+        "external": 0
+      },
+      "pos": [
+        71,
+        0
+      ]
+    },
+    {
+      "id": 2,
+      "plugin": "Core",
+      "version": "1.1.6",
+      "model": "AudioInterface",
+      "params": [],
+      "leftModuleId": 35,
+      "data": {
+        "audio": {
+          "driver": 7,
+          "deviceName": "ASIO Link Pro",
+          "offset": 0,
+          "maxChannels": 8,
+          "sampleRate": 44100,
+          "blockSize": 256
+        }
+      },
+      "pos": [
+        81,
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "CZSaw",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 3.58000326
+        }
+      ],
+      "leftModuleId": 9,
+      "rightModuleId": 96,
+      "pos": [
+        41,
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "plugin": "JW-Modules",
+      "version": "1.0.9",
+      "model": "NoteSeq16",
+      "params": [
+        {
+          "id": 0,
+          "value": 16.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.100000001
+        },
+        {
+          "id": 5,
+          "value": 11.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": -2.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 24,
+      "rightModuleId": 9,
+      "data": {
+        "channels": 1,
+        "cells": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "pos": [
+        26,
+        1
+      ]
+    },
+    {
+      "id": 8,
+      "plugin": "ImpromptuModular",
+      "version": "1.1.3",
+      "model": "Clocked",
+      "params": [
+        {
+          "id": 0,
+          "value": 100.0
+        },
+        {
+          "id": 1,
+          "value": 5.0
+        },
+        {
+          "id": 2,
+          "value": 2.0
+        },
+        {
+          "id": 3,
+          "value": -9.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.5
+        },
+        {
+          "id": 9,
+          "value": 0.5
+        },
+        {
+          "id": 10,
+          "value": 0.5
+        },
+        {
+          "id": 11,
+          "value": 0.5
+        },
+        {
+          "id": 12,
+          "value": 0.0
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 101,
+      "data": {
+        "panelTheme": 0,
+        "running": true,
+        "displayDelayNoteMode": true,
+        "bpmDetectionMode": false,
+        "restartOnStopStartRun": 0,
+        "sendResetOnRestart": false,
+        "ppqn": 4,
+        "resetClockOutputsHigh": true,
+        "momentaryRunInput": true
+      },
+      "pos": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": 9,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Feidah",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.406499445
+        }
+      ],
+      "leftModuleId": 6,
+      "rightModuleId": 3,
+      "pos": [
+        39,
+        1
+      ]
+    },
+    {
+      "id": 11,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "VCMixer",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0789998546
+        },
+        {
+          "id": 1,
+          "value": 1.15965581
+        },
+        {
+          "id": 2,
+          "value": 0.882469296
+        },
+        {
+          "id": 3,
+          "value": 1.12005711
+        },
+        {
+          "id": 4,
+          "value": 1.2218802
+        }
+      ],
+      "rightModuleId": 35,
+      "pos": [
+        59,
+        1
+      ]
+    },
+    {
+      "id": 16,
+      "plugin": "JW-Modules",
+      "version": "1.0.9",
+      "model": "NoteSeq16",
+      "params": [
+        {
+          "id": 0,
+          "value": 16.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.100000001
+        },
+        {
+          "id": 5,
+          "value": 11.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": -2.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 34,
+      "rightModuleId": 98,
+      "data": {
+        "channels": 1,
+        "cells": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "pos": [
+        37,
+        2
+      ]
+    },
+    {
+      "id": 17,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "CZSaw",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 99,
+      "rightModuleId": 48,
+      "pos": [
+        49,
+        0
+      ]
+    },
+    {
+      "id": 18,
+      "plugin": "JW-Modules",
+      "version": "1.0.9",
+      "model": "NoteSeq16",
+      "params": [
+        {
+          "id": 0,
+          "value": 16.0
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0299999993
+        },
+        {
+          "id": 5,
+          "value": 11.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": -1.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 23,
+      "rightModuleId": 19,
+      "data": {
+        "channels": 1,
+        "cells": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "pos": [
+        26,
+        0
+      ]
+    },
+    {
+      "id": 19,
+      "plugin": "Geodesics",
+      "version": "1.0.0",
+      "model": "Fate",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 0.235999778
+        }
+      ],
+      "leftModuleId": 18,
+      "rightModuleId": 22,
+      "data": {
+        "panelTheme": 0
+      },
+      "pos": [
+        39,
+        0
+      ]
+    },
+    {
+      "id": 22,
+      "plugin": "Fundamental",
+      "version": "1.4.0",
+      "model": "Quantizer",
+      "params": [],
+      "leftModuleId": 19,
+      "rightModuleId": 99,
+      "data": {
+        "enabledNotes": [
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      "pos": [
+        44,
+        0
+      ]
+    },
+    {
+      "id": 23,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Blank",
+      "params": [],
+      "rightModuleId": 18,
+      "pos": [
+        24,
+        0
+      ]
+    },
+    {
+      "id": 24,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Blank",
+      "params": [],
+      "rightModuleId": 6,
+      "pos": [
+        24,
+        1
+      ]
+    },
+    {
+      "id": 26,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Mixah",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.205500498
+        },
+        {
+          "id": 1,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 48,
+      "rightModuleId": 100,
+      "pos": [
+        53,
+        0
+      ]
+    },
+    {
+      "id": 27,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "CZReso1",
+      "params": [
+        {
+          "id": 0,
+          "value": -30.2940063
+        },
+        {
+          "id": 1,
+          "value": 0.0
+        },
+        {
+          "id": 2,
+          "value": 4.99500179
+        }
+      ],
+      "leftModuleId": 98,
+      "rightModuleId": 29,
+      "pos": [
+        52,
+        2
+      ]
+    },
+    {
+      "id": 29,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Feidah",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 27,
+      "pos": [
+        54,
+        2
+      ]
+    },
+    {
+      "id": 30,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "CZPulse",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 54.0
+        },
+        {
+          "id": 2,
+          "value": 1.0
+        },
+        {
+          "id": 3,
+          "value": 7.41000223
+        }
+      ],
+      "leftModuleId": 97,
+      "rightModuleId": 31,
+      "pos": [
+        28,
+        2
+      ]
+    },
+    {
+      "id": 31,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Feidah",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 30,
+      "pos": [
+        30,
+        2
+      ]
+    },
+    {
+      "id": 33,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Blank",
+      "params": [],
+      "rightModuleId": 97,
+      "pos": [
+        24,
+        2
+      ]
+    },
+    {
+      "id": 34,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Blank",
+      "params": [],
+      "rightModuleId": 16,
+      "pos": [
+        35,
+        2
+      ]
+    },
+    {
+      "id": 35,
+      "plugin": "Valley",
+      "version": "1.0.1",
+      "model": "Plateau",
+      "params": [
+        {
+          "id": 0,
+          "value": 1.0
+        },
+        {
+          "id": 1,
+          "value": 0.150000066
+        },
+        {
+          "id": 2,
+          "value": 0.111750014
+        },
+        {
+          "id": 3,
+          "value": 10.0
+        },
+        {
+          "id": 4,
+          "value": 10.0
+        },
+        {
+          "id": 5,
+          "value": 0.144499764
+        },
+        {
+          "id": 6,
+          "value": 7.53999758
+        },
+        {
+          "id": 7,
+          "value": 0.405515939
+        },
+        {
+          "id": 8,
+          "value": 10.0
+        },
+        {
+          "id": 9,
+          "value": 10.0
+        },
+        {
+          "id": 10,
+          "value": 0.0
+        },
+        {
+          "id": 11,
+          "value": 0.5
+        },
+        {
+          "id": 12,
+          "value": 0.5
+        },
+        {
+          "id": 13,
+          "value": 0.0
+        },
+        {
+          "id": 14,
+          "value": 0.0
+        },
+        {
+          "id": 15,
+          "value": 0.0
+        },
+        {
+          "id": 16,
+          "value": 0.0
+        },
+        {
+          "id": 17,
+          "value": 0.0
+        },
+        {
+          "id": 18,
+          "value": 0.0
+        },
+        {
+          "id": 19,
+          "value": 0.0
+        },
+        {
+          "id": 20,
+          "value": 0.0
+        },
+        {
+          "id": 21,
+          "value": 0.0
+        },
+        {
+          "id": 22,
+          "value": 0.0
+        },
+        {
+          "id": 23,
+          "value": 0.0
+        },
+        {
+          "id": 24,
+          "value": 0.0
+        },
+        {
+          "id": 25,
+          "value": 0.0
+        },
+        {
+          "id": 26,
+          "value": 0.0
+        },
+        {
+          "id": 27,
+          "value": 0.0
+        },
+        {
+          "id": 28,
+          "value": 0.0
+        },
+        {
+          "id": 29,
+          "value": 0.0
+        },
+        {
+          "id": 30,
+          "value": 1.0
+        }
+      ],
+      "leftModuleId": 11,
+      "rightModuleId": 2,
+      "data": {
+        "frozen": false,
+        "freezeToggle": false,
+        "panelStyle": 1,
+        "tuned": 0,
+        "diffuseInput": 1,
+        "preDelayCVSens": 0,
+        "inputSensitivity": 0,
+        "outputSaturation": 0
+      },
+      "pos": [
+        69,
+        1
+      ]
+    },
+    {
+      "id": 48,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "CZReso3",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.00300000003
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 17,
+      "rightModuleId": 26,
+      "pos": [
+        51,
+        0
+      ]
+    },
+    {
+      "id": 50,
+      "plugin": "AlrightDevices",
+      "version": "1.0.2",
+      "model": "Chronoblob2",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.375
+        },
+        {
+          "id": 1,
+          "value": 0.342499942
+        },
+        {
+          "id": 2,
+          "value": 0.5
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        },
+        {
+          "id": 4,
+          "value": 0.0
+        },
+        {
+          "id": 5,
+          "value": 0.0
+        },
+        {
+          "id": 6,
+          "value": 0.0
+        },
+        {
+          "id": 7,
+          "value": 0.0
+        },
+        {
+          "id": 8,
+          "value": 0.0
+        },
+        {
+          "id": 9,
+          "value": 0.0
+        }
+      ],
+      "rightModuleId": 1,
+      "data": {
+        "delay_mode": 2,
+        "hold_behavior": 0,
+        "sync_prescaler": 6
+      },
+      "pos": [
+        59,
+        0
+      ]
+    },
+    {
+      "id": 96,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Shapah",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.357500285
+        },
+        {
+          "id": 2,
+          "value": 0.386000037
+        },
+        {
+          "id": 3,
+          "value": 0.247999877
+        }
+      ],
+      "leftModuleId": 3,
+      "pos": [
+        43,
+        1
+      ]
+    },
+    {
+      "id": 97,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Shapah",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0269999988
+        },
+        {
+          "id": 1,
+          "value": 0.103999838
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 33,
+      "rightModuleId": 30,
+      "pos": [
+        26,
+        2
+      ]
+    },
+    {
+      "id": 98,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Shapah",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.273000062
+        },
+        {
+          "id": 2,
+          "value": 0.0
+        },
+        {
+          "id": 3,
+          "value": 0.0
+        }
+      ],
+      "leftModuleId": 16,
+      "rightModuleId": 27,
+      "pos": [
+        50,
+        2
+      ]
+    },
+    {
+      "id": 99,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Shapah",
+      "params": [
+        {
+          "id": 0,
+          "value": 0.0
+        },
+        {
+          "id": 1,
+          "value": 0.648500085
+        },
+        {
+          "id": 2,
+          "value": 0.656999946
+        },
+        {
+          "id": 3,
+          "value": 0.208500013
+        }
+      ],
+      "leftModuleId": 22,
+      "rightModuleId": 17,
+      "pos": [
+        47,
+        0
+      ]
+    },
+    {
+      "id": 100,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "Dividah",
+      "params": [],
+      "leftModuleId": 26,
+      "pos": [
+        55,
+        0
+      ]
+    },
+    {
+      "id": 101,
+      "plugin": "MockbaModular",
+      "version": "1.1.3",
+      "model": "DualOR",
+      "params": [],
+      "leftModuleId": 8,
+      "pos": [
+        20,
+        0
+      ]
+    }
+  ],
+  "cables": [
+    {
+      "id": 7,
+      "outputModuleId": 8,
+      "outputId": 1,
+      "inputModuleId": 6,
+      "inputId": 0,
+      "color": "#b700b5"
+    },
+    {
+      "id": 20,
+      "outputModuleId": 8,
+      "outputId": 1,
+      "inputModuleId": 16,
+      "inputId": 0,
+      "color": "#803610"
+    },
+    {
+      "id": 28,
+      "outputModuleId": 19,
+      "outputId": 0,
+      "inputModuleId": 22,
+      "inputId": 0,
+      "color": "#100f12"
+    },
+    {
+      "id": 29,
+      "outputModuleId": 22,
+      "outputId": 0,
+      "inputModuleId": 17,
+      "inputId": 0,
+      "color": "#803610"
+    },
+    {
+      "id": 31,
+      "outputModuleId": 18,
+      "outputId": 0,
+      "inputModuleId": 19,
+      "inputId": 2,
+      "color": "#ff9941"
+    },
+    {
+      "id": 33,
+      "outputModuleId": 8,
+      "outputId": 2,
+      "inputModuleId": 18,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 46,
+      "outputModuleId": 16,
+      "outputId": 0,
+      "inputModuleId": 27,
+      "inputId": 0,
+      "color": "#808080"
+    },
+    {
+      "id": 44,
+      "outputModuleId": 29,
+      "outputId": 0,
+      "inputModuleId": 11,
+      "inputId": 3,
+      "color": "#0986ad"
+    },
+    {
+      "id": 48,
+      "outputModuleId": 27,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 0,
+      "color": "#100f12"
+    },
+    {
+      "id": 50,
+      "outputModuleId": 31,
+      "outputId": 0,
+      "inputModuleId": 11,
+      "inputId": 2,
+      "color": "#c91847"
+    },
+    {
+      "id": 51,
+      "outputModuleId": 30,
+      "outputId": 0,
+      "inputModuleId": 31,
+      "inputId": 0,
+      "color": "#ff9941"
+    },
+    {
+      "id": 11,
+      "outputModuleId": 35,
+      "outputId": 1,
+      "inputModuleId": 2,
+      "inputId": 1,
+      "color": "#803610"
+    },
+    {
+      "id": 10,
+      "outputModuleId": 35,
+      "outputId": 0,
+      "inputModuleId": 2,
+      "inputId": 0,
+      "color": "#100f12"
+    },
+    {
+      "id": 55,
+      "outputModuleId": 11,
+      "outputId": 0,
+      "inputModuleId": 35,
+      "inputId": 0,
+      "color": "#803610"
+    },
+    {
+      "id": 56,
+      "outputModuleId": 11,
+      "outputId": 0,
+      "inputModuleId": 35,
+      "inputId": 1,
+      "color": "#b700b5"
+    },
+    {
+      "id": 57,
+      "outputModuleId": 22,
+      "outputId": 0,
+      "inputModuleId": 48,
+      "inputId": 0,
+      "color": "#ff9941"
+    },
+    {
+      "id": 60,
+      "outputModuleId": 8,
+      "outputId": 3,
+      "inputModuleId": 18,
+      "inputId": 2,
+      "color": "#c91847"
+    },
+    {
+      "id": 63,
+      "outputModuleId": 6,
+      "outputId": 1,
+      "inputModuleId": 96,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 64,
+      "outputModuleId": 96,
+      "outputId": 0,
+      "inputModuleId": 9,
+      "inputId": 0,
+      "color": "#0986ad"
+    },
+    {
+      "id": 66,
+      "outputModuleId": 6,
+      "outputId": 1,
+      "inputModuleId": 97,
+      "inputId": 0,
+      "color": "#808080"
+    },
+    {
+      "id": 67,
+      "outputModuleId": 97,
+      "outputId": 0,
+      "inputModuleId": 31,
+      "inputId": 1,
+      "color": "#ffffff"
+    },
+    {
+      "id": 52,
+      "outputModuleId": 97,
+      "outputId": 0,
+      "inputModuleId": 30,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 68,
+      "outputModuleId": 16,
+      "outputId": 1,
+      "inputModuleId": 98,
+      "inputId": 0,
+      "color": "#ff9941"
+    },
+    {
+      "id": 49,
+      "outputModuleId": 98,
+      "outputId": 0,
+      "inputModuleId": 29,
+      "inputId": 1,
+      "color": "#803610"
+    },
+    {
+      "id": 47,
+      "outputModuleId": 98,
+      "outputId": 0,
+      "inputModuleId": 27,
+      "inputId": 1,
+      "color": "#ffffff"
+    },
+    {
+      "id": 58,
+      "outputModuleId": 99,
+      "outputId": 0,
+      "inputModuleId": 48,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 30,
+      "outputModuleId": 99,
+      "outputId": 0,
+      "inputModuleId": 17,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 27,
+      "outputModuleId": 18,
+      "outputId": 1,
+      "inputModuleId": 99,
+      "inputId": 0,
+      "color": "#ffffff"
+    },
+    {
+      "id": 34,
+      "outputModuleId": 8,
+      "outputId": 1,
+      "inputModuleId": 19,
+      "inputId": 1,
+      "color": "#0986ad"
+    },
+    {
+      "id": 62,
+      "outputModuleId": 8,
+      "outputId": 2,
+      "inputModuleId": 50,
+      "inputId": 7,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 61,
+      "outputModuleId": 50,
+      "outputId": 0,
+      "inputModuleId": 11,
+      "inputId": 4,
+      "color": "#ff9941"
+    },
+    {
+      "id": 18,
+      "outputModuleId": 101,
+      "outputId": 0,
+      "inputModuleId": 6,
+      "inputId": 1,
+      "color": "#ffffff"
+    },
+    {
+      "id": 21,
+      "outputModuleId": 101,
+      "outputId": 0,
+      "inputModuleId": 16,
+      "inputId": 1,
+      "color": "#c91847"
+    },
+    {
+      "id": 32,
+      "outputModuleId": 101,
+      "outputId": 0,
+      "inputModuleId": 18,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 119,
+      "outputModuleId": 8,
+      "outputId": 5,
+      "inputModuleId": 101,
+      "inputId": 1,
+      "color": "#ff9941"
+    },
+    {
+      "id": 120,
+      "outputModuleId": 8,
+      "outputId": 4,
+      "inputModuleId": 101,
+      "inputId": 0,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 59,
+      "outputModuleId": 48,
+      "outputId": 0,
+      "inputModuleId": 26,
+      "inputId": 3,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 37,
+      "outputModuleId": 17,
+      "outputId": 0,
+      "inputModuleId": 26,
+      "inputId": 2,
+      "color": "#ffffff"
+    },
+    {
+      "id": 42,
+      "outputModuleId": 99,
+      "outputId": 0,
+      "inputModuleId": 26,
+      "inputId": 1,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 5,
+      "outputModuleId": 6,
+      "outputId": 0,
+      "inputModuleId": 3,
+      "inputId": 0,
+      "color": "#0c8e15"
+    },
+    {
+      "id": 9,
+      "outputModuleId": 9,
+      "outputId": 0,
+      "inputModuleId": 3,
+      "inputId": 1,
+      "color": "#ffffff"
+    },
+    {
+      "id": 125,
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 11,
+      "inputId": 1,
+      "color": "#ff9941"
+    },
+    {
+      "id": 8,
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 0,
+      "color": "#808080"
+    },
+    {
+      "id": 35,
+      "outputModuleId": 48,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 1,
+      "color": "#b700b5"
+    },
+    {
+      "id": 126,
+      "outputModuleId": 26,
+      "outputId": 0,
+      "inputModuleId": 50,
+      "inputId": 5,
+      "color": "#c9b70e"
+    },
+    {
+      "id": 73,
+      "outputModuleId": 8,
+      "outputId": 2,
+      "inputModuleId": 100,
+      "inputId": 0,
+      "color": "#808080"
+    },
+    {
+      "id": 74,
+      "outputModuleId": 100,
+      "outputId": 2,
+      "inputModuleId": 50,
+      "inputId": 2,
+      "color": "#ffffff"
+    }
+  ]
+}

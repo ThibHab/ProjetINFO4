@@ -1,0 +1,25 @@
+{
+  "slug": "PS-PurrSoftware",   
+  "name": "PS-PurrSoftware",
+  "version": "2.0.24",
+  "license": "GPL-3.0-or-later",
+  "brand": "PurrSoftware",
+  "author": "Ken Chaffin",
+  "authorEmail": "",
+  "authorUrl": "https://github.com/knchaffin/Meander",
+  "pluginUrl": "https://github.com/knchaffin/Meander",
+  "manualUrl": "https://github.com/knchaffin/Meander/blob/master-V2/README.md",
+  "sourceUrl": "https://github.com/knchaffin/Meander/tree/master-V2",
+  "changelogUrl": "https://github.com/knchaffin/Meander/blob/master-V2/CHANGELOG.md",
+  "donateUrl": "",
+  "modules": [
+    {
+      "slug": "Meander",
+      "name": "Meander",
+      "description": "Algorithmic Composer",
+      "tags": ["Sequencer", "Polyphonic"]
+    } 
+  ]
+ }
+
+

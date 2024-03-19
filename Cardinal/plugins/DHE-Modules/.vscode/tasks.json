@@ -1,0 +1,105 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "all"
+            ],
+            "group": "build",
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build and test",
+            "dependsOn": [
+                "Build",
+                "Test"
+            ],
+            "group": "build",
+            "presentation": {
+                "clear": true
+            },
+        },
+        {
+            "label": "Clean",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "clean",
+            ],
+            "group": "build",
+            "presentation": {
+                "clear": true
+            },
+        },
+        {
+            "label": "Run",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "run",
+            ],
+            "dependsOn": "Build",
+            "group": "build",
+            "presentation": {
+                "clear": true
+            },
+        },
+        {
+            "label": "Setup",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "setup",
+            ],
+            "group": "build",
+            "presentation": {
+                "clear": true
+            },
+        },
+        {
+            "label": "Test",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "test"
+            ],
+            "group": "build",
+            "presentation": {
+                "clear": true
+            },
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${workspaceFolder}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+    ]
+}

@@ -1,0 +1,42 @@
+language: cpp
+matrix:
+  include:
+  - os: linux
+    dist: xenial
+  - os: osx
+addons:
+  apt:
+    packages:
+    - autoconf
+    - libglu1-mesa-dev
+  homebrew:
+    packages:
+    - automake
+    - libtool
+    - pkg-config
+git:
+  submodules: true
+env:
+  global:
+  - MAKEFLAGS="-j 2"
+install:
+- mkdir -p "${HOME}"/Rack
+- pushd "${HOME}"/Rack
+- curl -o Rack-SDK.zip https://vcvrack.com/downloads/Rack-SDK-1.0.0.zip
+- unzip Rack-SDK.zip
+- popd
+script:
+- export RACK_DIR="${HOME}"/Rack/Rack-SDK
+- make dep
+- make dist
+
+deploy:
+  provider: releases
+  api_key:
+    secure: 
+  file_glob: true
+  file: dist/CatroModulo-*-*.zip
+  skip_cleanup: true  # Don't remove dist/ before uploading files
+  on:
+    repo: catronomix/catro-modulo
+    tags: true

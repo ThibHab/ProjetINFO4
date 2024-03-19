@@ -1,0 +1,87 @@
+CHANGELOG
+
+v.1.0.0 (Nov 12th 2019)
+
+VCV Plugin Library Release 1.0.0
+
+v.1.0.0RC1 (Nov 11th 2019)
+
+Open source under MIT license.
+Porting to Rack V1
+Code fixes and some cleanup
+Add tool-tips and calibrated values to many knobs and buttons
+Dual Delay: Add bypass feature to filters
+
+v.0.6.51 (23. January 2019)
+
+ADSR: cv input for sustain fixed (Rack shouldn't crash anymore)
+
+DUAL DELAY: fixed the wet signal (again),
+added the option to clear the buffers of delay A & B via buttons or cv inputs,
+rearranged the right side of the module to make it look better
+
+v.0.6.5 (16. January 2019)
+
+XSEQ: fixed/updated module layout and internally routings
+ADSR: added cv input for the decay shape + an option to choose between 12db or 24db slope via right click menu
+CRAZYMULT: fixed/updated module layout and all internal routings.
+WAVEFOLDER: fixed the mix control + cv input
+DUAL DELAY: now the internal filters also work on the wet signal outputs
+
+v.0.6.4 (10. November 2018)
+
+added Treasure VCO
+
+fixed the sync mode of the Dual Delay module and added dotted and triplet delay times.
+added shape knobs for attack, decay and release to the ADSR.
+
+v.0.6.3 (04. July 2018)
+
+added Noise
+added Phaser
+added Bitcrusher
+added Morph
+added Ring
+
+fixed ADSR
+
+v.0.6.2 (13. June 2018)
+
+added Wavefolder
+optimized OSCiX
+
+v.0.6.1 (01. June 2018)
+
+added Dual-Delay - A syncable dual delay module which can work in mono, stereo and dual mode
+
+upgraded the Random Source module with a cv input for the sample input which now allows to modulate the gain of the incoming sample signal.
+upgraded every module with a night-mode skin
+
+
+v.0.6.0 (18. March 2018)
+
+added PAN-VCA - A multifunctional VCA
+added TVCF - A filter based on the TwinPeak filter by Rob Hordijk
+added Rogue - Voltage Controlled Oscillator with multiple wavform outputs. Sine, Triangle, Sawtooth, Square, Half Wave Rectified Sine, Full Wave  Rectified Sine
+
+upgraded OSCiX with a different wavefolder as well as FM Index knob and cv input and some other internal changes
+upgraded the WaveShaper module with additional inputs for each stage
+upgraded the Random Source module with a slewed Output which can be modified throu the "Slew" knob
+
+redesigned switches for all modules
+
+
+v0.5.6 (21. January 2018)
+
+added XSEQ - A rythmic pattern/Gate generator based on boolean logic
+added SIMPLE SLIDER - A VCA /Crossfader
+added OSCiX - VCO with build in Wavefolder (Stage 1 of the Waveshaper module)
+added FREQDIV - Frequency Divider (adding sub-octaves to a signal)
+
+added S/H to the MLFO
+redesigned MLFO
+
+deleted RANDOM SOURCE v2
+redesigned RANDOM SOURCE (formally v1)
+
+redesigned MULT

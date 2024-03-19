@@ -1,0 +1,886 @@
+name: bootstrap
+
+on:
+  push:
+
+env:
+  CACHE_VERSION: 0
+  DEBIAN_FRONTEND: noninteractive
+  PAWPAW_SKIP_TESTS: 1
+
+jobs:
+  common:
+    strategy:
+      matrix:
+        include:
+          # macos 11
+          - target: macos
+            os: macos-11
+          - target: macos-10.15
+            os: macos-11
+          - target: macos-universal
+            os: macos-11
+          - target: macos-universal-10.15
+            os: macos-11
+          # macos 12
+          - target: macos
+            os: macos-12
+          - target: macos-10.15
+            os: macos-12
+          - target: macos-universal
+            os: macos-12
+          - target: macos-universal-10.15
+            os: macos-12
+          # debian:11
+          - target: linux-aarch64
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:11
+            os: ubuntu-latest
+          - target: wasm
+            container: debian:11
+            os: ubuntu-latest
+          - target: win32
+            container: debian:11
+            os: ubuntu-latest
+          - target: win64
+            container: debian:11
+            os: ubuntu-latest
+          # debian:12
+          - target: linux-aarch64
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:12
+            os: ubuntu-latest
+          - target: wasm
+            container: debian:12
+            os: ubuntu-latest
+          - target: win32
+            container: debian:12
+            os: ubuntu-latest
+          - target: win64
+            container: debian:12
+            os: ubuntu-latest
+          # ubuntu:18.04
+          - target: linux-aarch64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          # ubuntu:20.04
+          - target: linux-aarch64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          # ubuntu:22.04
+          - target: linux-aarch64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: wasm
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          # ubuntu:23.10
+          - target: linux-aarch64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: wasm
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: common-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-common.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}
+      - name: Pack bootstrap build
+        shell: bash
+        run: |
+          tar -C ~/PawPawBuilds -czf common-${{ env.PAWPAW_PACK_NAME }}.tar.gz builds targets
+      - uses: actions/upload-artifact@v3
+        with:
+          name: common-${{ env.PAWPAW_PACK_NAME }}
+          path: common-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+
+  plugins:
+    strategy:
+      matrix:
+        include:
+          # macos 11
+          - target: macos
+            os: macos-11
+          - target: macos-10.15
+            os: macos-11
+          - target: macos-universal
+            os: macos-11
+          - target: macos-universal-10.15
+            os: macos-11
+          # macos 12
+          - target: macos
+            os: macos-12
+          - target: macos-10.15
+            os: macos-12
+          - target: macos-universal
+            os: macos-12
+          - target: macos-universal-10.15
+            os: macos-12
+          # debian:11
+          - target: linux-aarch64
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:11
+            os: ubuntu-latest
+          - target: wasm
+            container: debian:11
+            os: ubuntu-latest
+          - target: win32
+            container: debian:11
+            os: ubuntu-latest
+          - target: win64
+            container: debian:11
+            os: ubuntu-latest
+          # debian:12
+          - target: linux-aarch64
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:12
+            os: ubuntu-latest
+          - target: wasm
+            container: debian:12
+            os: ubuntu-latest
+          - target: win32
+            container: debian:12
+            os: ubuntu-latest
+          - target: win64
+            container: debian:12
+            os: ubuntu-latest
+          # ubuntu:18.04
+          - target: linux-aarch64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          # ubuntu:20.04
+          - target: linux-aarch64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          # ubuntu:22.04
+          - target: linux-aarch64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: wasm
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          # ubuntu:23.10
+          - target: linux-aarch64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: wasm
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    needs: common
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: plugins-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+      - name: Download common
+        uses: actions/download-artifact@v3
+        with:
+          name: common-${{ env.PAWPAW_PACK_NAME }}
+          path: ~/PawPawBuilds
+      - name: Extract common
+        shell: bash
+        run: |
+          cd ~/PawPawBuilds && \
+          tar xf common-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-plugins.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}
+      - name: Pack bootstrap build
+        shell: bash
+        run: |
+          tar -C ~/PawPawBuilds -czf plugins-${{ env.PAWPAW_PACK_NAME }}.tar.gz builds targets
+      - uses: actions/upload-artifact@v3
+        with:
+          name: plugins-${{ env.PAWPAW_PACK_NAME }}
+          path: plugins-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+
+  jack2:
+    strategy:
+      matrix:
+        include:
+          # macos 11
+          - target: macos
+            os: macos-11
+          - target: macos-10.15
+            os: macos-11
+          - target: macos-universal
+            os: macos-11
+          - target: macos-universal-10.15
+            os: macos-11
+          # macos 12
+          - target: macos
+            os: macos-12
+          - target: macos-10.15
+            os: macos-12
+          - target: macos-universal
+            os: macos-12
+          - target: macos-universal-10.15
+            os: macos-12
+          # debian:11
+          - target: linux-aarch64
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:11
+            os: ubuntu-latest
+          - target: win32
+            container: debian:11
+            os: ubuntu-latest
+          - target: win64
+            container: debian:11
+            os: ubuntu-latest
+          # debian:12
+          - target: linux-aarch64
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:12
+            os: ubuntu-latest
+          - target: win32
+            container: debian:12
+            os: ubuntu-latest
+          - target: win64
+            container: debian:12
+            os: ubuntu-latest
+          # ubuntu:18.04
+          - target: linux-aarch64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          # ubuntu:20.04
+          - target: linux-aarch64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          # ubuntu:22.04
+          - target: linux-aarch64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          # ubuntu:23.10
+          - target: linux-aarch64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    needs: common
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: jack2-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+      - name: Download common
+        uses: actions/download-artifact@v3
+        with:
+          name: common-${{ env.PAWPAW_PACK_NAME }}
+          path: ~/PawPawBuilds
+      - name: Extract common
+        shell: bash
+        run: |
+          cd ~/PawPawBuilds && \
+          tar xf common-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-jack2.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}
+
+  qt:
+    strategy:
+      matrix:
+        include:
+          # macos 11
+          - target: macos
+            os: macos-11
+          - target: macos-10.15
+            os: macos-11
+          - target: macos-universal
+            os: macos-11
+          - target: macos-universal-10.15
+            os: macos-11
+          # macos 12
+          - target: macos
+            os: macos-12
+          - target: macos-10.15
+            os: macos-12
+          - target: macos-universal
+            os: macos-12
+          - target: macos-universal-10.15
+            os: macos-12
+          # debian:11
+          - target: linux-aarch64
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:11
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:11
+            os: ubuntu-latest
+          - target: win32
+            container: debian:11
+            os: ubuntu-latest
+          - target: win64
+            container: debian:11
+            os: ubuntu-latest
+          # debian:12
+          - target: linux-aarch64
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-i686
+            container: debian:12
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: debian:12
+            os: ubuntu-latest
+          - target: win32
+            container: debian:12
+            os: ubuntu-latest
+          - target: win64
+            container: debian:12
+            os: ubuntu-latest
+          # ubuntu:18.04
+          - target: linux-aarch64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          # ubuntu:20.04
+          - target: linux-aarch64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          # ubuntu:22.04
+          - target: linux-aarch64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          # ubuntu:23.10
+          - target: linux-aarch64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win32
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    needs: common
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: qt-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+      - name: Download common
+        uses: actions/download-artifact@v3
+        with:
+          name: common-${{ env.PAWPAW_PACK_NAME }}
+          path: ~/PawPawBuilds
+      - name: Extract common
+        shell: bash
+        run: |
+          cd ~/PawPawBuilds && \
+          tar xf common-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-qt.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}
+      - name: Pack bootstrap build
+        shell: bash
+        run: |
+          tar -C ~/PawPawBuilds -czf qt-${{ env.PAWPAW_PACK_NAME }}.tar.gz builds targets
+      - uses: actions/upload-artifact@v3
+        with:
+          name: qt-${{ env.PAWPAW_PACK_NAME }}
+          path: qt-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+
+  cardinal:
+    env:
+      PAWPAW_FAST_MATH: 1
+      PAWPAW_SKIP_LTO: 1
+      PAWPAW_SKIP_GLIB: 1
+      PAWPAW_SKIP_LV2: 1
+      PAWPAW_SKIP_OPENSSL: 1
+      PAWPAW_SKIP_SAMPLERATE: 1
+    strategy:
+      matrix:
+        include:
+          # ubuntu:20.04
+          - target: linux-aarch64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-armhf
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-i686
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-riscv64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: linux-x86_64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          - target: macos-universal-10.15
+            os: macos-11
+          - target: wasm
+            container: debian:12
+            os: ubuntu-latest
+          - target: win32
+            container: debian:12
+            os: ubuntu-latest
+          - target: win64
+            container: debian:12
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: cardinal-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-cardinal.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}
+
+  carla:
+    env:
+      PAWPAW_SKIP_OPENSSL: 1
+    strategy:
+      matrix:
+        include:
+          - target: macos-universal
+            os: macos-11
+          - target: win32
+            container: debian:12
+            os: ubuntu-latest
+          - target: win64
+            container: debian:12
+            os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    needs: [plugins, qt]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: qt-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+      - name: Download common
+        uses: actions/download-artifact@v3
+        with:
+          name: common-${{ env.PAWPAW_PACK_NAME }}
+          path: ~/PawPawBuilds
+      - name: Download plugins
+        uses: actions/download-artifact@v3
+        with:
+          name: plugins-${{ env.PAWPAW_PACK_NAME }}
+          path: ~/PawPawBuilds
+      - name: Download qt
+        uses: actions/download-artifact@v3
+        with:
+          name: qt-${{ env.PAWPAW_PACK_NAME }}
+          path: ~/PawPawBuilds
+      - name: Extract {common,plugins,qt}
+        shell: bash
+        run: |
+          cd ~/PawPawBuilds && \
+          tar xf common-${{ env.PAWPAW_PACK_NAME }}.tar.gz && \
+          tar xf plugins-${{ env.PAWPAW_PACK_NAME }}.tar.gz && \
+          tar xf qt-${{ env.PAWPAW_PACK_NAME }}.tar.gz
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-carla.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}
+
+  modaudio:
+    env:
+      PAWPAW_FAST_MATH: 1
+      PAWPAW_SKIP_LTO: 1
+    strategy:
+      matrix:
+        include:
+          # macos 11
+          - target: macos-10.15
+            os: macos-11
+          - target: macos-universal-10.15
+            os: macos-11
+          # macos 12
+          - target: macos-10.15
+            os: macos-12
+          - target: macos-universal-10.15
+            os: macos-12
+          # debian 11
+          - target: linux-x86_64
+            container: debian:11
+            os: ubuntu-latest
+          - target: win64
+            container: debian:11
+            os: ubuntu-latest
+          # debian 12
+          - target: linux-x86_64
+            container: debian:12
+            os: ubuntu-latest
+          # FIXME std::mutex issues
+          #- target: win64
+            #container: debian:12
+            #os: ubuntu-latest
+          # ubuntu 18.04
+          - target: linux-x86_64
+            container: ubuntu:18.04
+            os: ubuntu-latest
+          # ubuntu 20.04
+          - target: linux-x86_64
+            container: ubuntu:20.04
+            os: ubuntu-latest
+          # ubuntu 22.04
+          - target: linux-x86_64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          - target: win64
+            container: ubuntu:22.04
+            os: ubuntu-latest
+          # ubuntu 23.10
+          - target: linux-x86_64
+            container: ubuntu:23.10
+            os: ubuntu-latest
+          # FIXME std::mutex issues
+          #- target: win64
+            #container: ubuntu:23.10
+            #os: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    container:
+      image: ${{ matrix.container }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/PawPawBuilds
+          key: modaudio-${{ matrix.container || matrix.os }}-${{ matrix.target }}-v${{ env.CACHE_VERSION }}
+      - name: Set up dependencies
+        run: |
+          ./.github/workflows/bootstrap-deps.sh ${{ matrix.target }}
+
+          if [ "${{ matrix.container }}" = "ubuntu:18.04" ]; then
+            freetypepkgname="libfreetype6-dev"
+          else
+            freetypepkgname="libfreetype-dev"
+          fi
+
+          if [ "${{ matrix.target }}" = "linux-x86_64" ]; then
+            apt-get install -yqq ${freetypepkgname}
+          elif [ "${{ matrix.target }}" = "win64" ]; then
+            apt-get install -yqq ${freetypepkgname} libx11-dev libxcursor-dev libxext-dev libxrandr-dev libxrender-dev
+          fi
+      - name: Run bootstrap
+        shell: bash
+        run: |
+          ./bootstrap-mod.sh ${{ matrix.target }} && ./.cleanup.sh ${{ matrix.target }}

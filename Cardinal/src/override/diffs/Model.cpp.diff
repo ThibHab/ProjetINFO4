@@ -1,0 +1,163 @@
+--- ../Rack/src/plugin/Model.cpp	2023-05-20 17:03:33.007081806 +0200
++++ Model.cpp	2023-05-20 18:29:51.484669742 +0200
+@@ -1,3 +1,30 @@
++/*
++ * DISTRHO Cardinal Plugin
++ * Copyright (C) 2021-2023 Filipe Coelho <falktx@falktx.com>
++ *
++ * This program is free software; you can redistribute it and/or
++ * modify it under the terms of the GNU General Public License as
++ * published by the Free Software Foundation; either version 3 of
++ * the License, or any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
++ * GNU General Public License for more details.
++ *
++ * For a full copy of the GNU General Public License see the LICENSE file.
++ */
++
++/**
++ * This file is an edited version of VCVRack's plugin/Model.cpp
++ * Copyright (C) 2016-2023 VCV.
++ *
++ * This program is free software: you can redistribute it and/or
++ * modify it under the terms of the GNU General Public License as
++ * published by the Free Software Foundation; either version 3 of
++ * the License, or (at your option) any later version.
++ */
++
+ #include <algorithm>
+ 
+ #include <plugin/Model.hpp>
+@@ -10,7 +37,8 @@
+ #include <ui/Menu.hpp>
+ #include <ui/MenuSeparator.hpp>
+ #include <helpers.hpp>
+-#include <window/Window.hpp>
++
++#include "../CardinalCommon.hpp"
+ 
+ 
+ namespace rack {
+@@ -18,7 +46,7 @@
+ 
+ 
+ void Model::fromJson(json_t* rootJ) {
+-	assert(plugin);
++	DISTRHO_SAFE_ASSERT_RETURN(plugin != nullptr,);
+ 
+ 	json_t* nameJ = json_object_get(rootJ, "name");
+ 	if (nameJ)
+@@ -55,11 +83,6 @@
+ 	if (manualUrlJ)
+ 		manualUrl = json_string_value(manualUrlJ);
+ 
+-	// modularGridUrl
+-	json_t* modularGridUrlJ = json_object_get(rootJ, "modularGridUrl");
+-	if (modularGridUrlJ)
+-		modularGridUrl = json_string_value(modularGridUrlJ);
+-
+ 	// hidden
+ 	json_t* hiddenJ = json_object_get(rootJ, "hidden");
+ 	// "disabled" was a deprecated alias in Rack <2
+@@ -77,7 +100,7 @@
+ 
+ 
+ std::string Model::getFullName() {
+-	assert(plugin);
++	DISTRHO_SAFE_ASSERT_RETURN(plugin, {});
+ 	return plugin->getBrand() + " " + name;
+ }
+ 
+@@ -102,7 +125,7 @@
+ void Model::appendContextMenu(ui::Menu* menu, bool inBrowser) {
+ 	// plugin
+ 	menu->addChild(createMenuItem("Plugin: " + plugin->name, "", [=]() {
+-		system::openBrowser(plugin->pluginUrl);
++		patchUtils::openBrowser(plugin->pluginUrl);
+ 	}, plugin->pluginUrl == ""));
+ 
+ 	// version
+@@ -111,7 +134,7 @@
+ 	// author
+ 	if (plugin->author != "") {
+ 		menu->addChild(createMenuItem("Author: " + plugin->author, "", [=]() {
+-			system::openBrowser(plugin->authorUrl);
++			patchUtils::openBrowser(plugin->authorUrl);
+ 		}, plugin->authorUrl.empty()));
+ 	}
+ 
+@@ -119,7 +142,7 @@
+ 	std::string license = plugin->license;
+ 	if (string::startsWith(license, "https://") || string::startsWith(license, "http://")) {
+ 		menu->addChild(createMenuItem("License: Open in browser", "", [=]() {
+-			system::openBrowser(license);
++			patchUtils::openBrowser(license);
+ 		}));
+ 	}
+ 	else if (license != "") {
+@@ -136,44 +159,32 @@
+ 
+ 	menu->addChild(new ui::MenuSeparator);
+ 
+-	// VCV Library page
+-	menu->addChild(createMenuItem("VCV Library page", "", [=]() {
+-		system::openBrowser("https://library.vcvrack.com/" + plugin->slug + "/" + slug);
+-	}));
+-
+-	// modularGridUrl
+-	if (modularGridUrl != "") {
+-		menu->addChild(createMenuItem("ModularGrid page", "", [=]() {
+-			system::openBrowser(modularGridUrl);
+-		}));
+-	}
+-
+ 	// manual
+ 	std::string manualUrl = getManualUrl();
+ 	if (manualUrl != "") {
+ 		menu->addChild(createMenuItem("User manual", RACK_MOD_CTRL_NAME "+F1", [=]() {
+-			system::openBrowser(manualUrl);
++			patchUtils::openBrowser(manualUrl);
+ 		}));
+ 	}
+ 
+ 	// donate
+ 	if (plugin->donateUrl != "") {
+ 		menu->addChild(createMenuItem("Donate", "", [=]() {
+-			system::openBrowser(plugin->donateUrl);
++			patchUtils::openBrowser(plugin->donateUrl);
+ 		}));
+ 	}
+ 
+ 	// source code
+ 	if (plugin->sourceUrl != "") {
+ 		menu->addChild(createMenuItem("Source code", "", [=]() {
+-			system::openBrowser(plugin->sourceUrl);
++			patchUtils::openBrowser(plugin->sourceUrl);
+ 		}));
+ 	}
+ 
+ 	// changelog
+ 	if (plugin->changelogUrl != "") {
+ 		menu->addChild(createMenuItem("Changelog", "", [=]() {
+-			system::openBrowser(plugin->changelogUrl);
++			patchUtils::openBrowser(plugin->changelogUrl);
+ 		}));
+ 	}
+ 
+@@ -184,13 +195,6 @@
+ 		}));
+ 	}
+ 
+-	// plugin folder
+-	if (plugin->path != "") {
+-		menu->addChild(createMenuItem("Open plugin folder", "", [=]() {
+-			system::openDirectory(plugin->path);
+-		}));
+-	}
+-
+ 	// Favorite
+ 	std::string favoriteRightText = inBrowser ? (RACK_MOD_CTRL_NAME "+click") : "";
+ 	if (isFavorite())

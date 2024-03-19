@@ -1,0 +1,10 @@
+# clangd cache
+/.cache
+
+# idea
+/.idea/workspace.xml
+
+#artifacts
+/build/
+/compile_commands.json
+/lib*.a

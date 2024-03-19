@@ -1,0 +1,10 @@
+plugin.dll
+build
+dep
+.vscode
+.idea
+dist
+*.bat
+fullhtml
+*Sourcetrail.*
+*cppcheck*

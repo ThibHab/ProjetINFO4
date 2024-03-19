@@ -1,0 +1,28 @@
+# labeler.yml:
+# Assign labels to pull requests that change various files
+# For more information, see https://github.com/actions/labeler
+
+dsp:
+  - modules/chowdsp_dsp/**/*
+
+gui:
+  - modules/chowdsp_gui/**/*
+
+wdf:
+  - modules/chowdsp_dsp/WDF/**/*
+
+plugin-utils:
+  - modules/chowdsp_plugin_utils/**/*
+
+presets:
+  - modules/chowdsp_plugin_utils/Presets/**/*
+
+tests:
+  - tests/**/*
+
+documentation:
+  - doxygen/*
+  - README.md
+
+ci-pipeline:
+  - .github/workflows/*
