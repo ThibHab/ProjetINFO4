@@ -231,6 +231,8 @@ struct Engine {
 	/** If no master module is set, the fallback Engine thread will step blocks, using the CPU clock for timing.
 	*/
 	PRIVATE void startFallbackThread();
+
+	void updateWire();
 };
 
 

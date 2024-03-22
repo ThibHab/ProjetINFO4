@@ -231,7 +231,7 @@ void Scene::step() {
 			}
 		}
 	}
-
+	APP->engine->updateWire();
 	Widget::step();
 }
 

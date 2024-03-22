@@ -560,7 +560,8 @@ Initializer::Initializer(const CardinalBasePlugin* const plugin, const CardinalB
    #ifdef DISTRHO_OS_WASM
     factoryTemplatePath = system::join(asset::patchesPath(), CARDINAL_WASM_WELCOME_TEMPLATE_FILENAME ".vcv");
    #else
-    factoryTemplatePath = system::join(asset::patchesPath(), "templates/" CARDINAL_VARIANT_NAME ".vcv");
+    //factoryTemplatePath = system::join(asset::patchesPath(), "templates/" CARDINAL_VARIANT_NAME ".vcv");
+    factoryTemplatePath =system::join(asset::systemDir, "../../../cardinal_configurations/midi-test-configuration.vcv");
    #endif
 
     // Log environment

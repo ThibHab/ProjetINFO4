@@ -1351,6 +1351,20 @@ void Engine_setRemoteDetails(Engine* const engine, remoteUtils::RemoteDetails* c
 	engine->internal->remoteDetails = remoteDetails;
 }
 
+void Engine::updateWire(){
+	if(true){
+		size_t numModule=getNumModules();
+		int64_t* idList=new int64_t[numModule];
+		getModuleIds(idList,numModule);
+		for(int i=0;i<numModule;i++){
+			Module* mod=getModule(idList[i]);
+			printf("%lld,",mod->getId());
+		}
+		delete[] idList;
+		printf("\n");
+	}
+}
+
 
 } // namespace engine
 } // namespace rack
