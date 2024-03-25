@@ -308,6 +308,8 @@ public:
        #ifdef CARDINAL_INIT_OSC_THREAD
         fInitializer->remotePluginInstance = this;
        #endif
+       //ici init module et remote
+       context->engine->setupVar();
     }
 
     ~CardinalPlugin() override

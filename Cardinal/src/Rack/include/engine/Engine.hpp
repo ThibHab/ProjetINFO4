@@ -233,6 +233,16 @@ struct Engine {
 	PRIVATE void startFallbackThread();
 
 	void updateWire();
+
+	struct rack_elem {
+		Module* host_midi;
+		Module* vco;
+		Module* vca;
+		Module* host_audio;
+	};
+
+	rack_elem* setupVar();
+	
 };
 
 

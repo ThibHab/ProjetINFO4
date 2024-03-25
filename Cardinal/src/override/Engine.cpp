@@ -1352,6 +1352,7 @@ void Engine_setRemoteDetails(Engine* const engine, remoteUtils::RemoteDetails* c
 }
 
 void Engine::updateWire(){
+	//TODO check new wire update
 	if(true){
 		size_t numModule=getNumModules();
 		int64_t* idList=new int64_t[numModule];
@@ -1363,6 +1364,20 @@ void Engine::updateWire(){
 		delete[] idList;
 		printf("\n");
 	}
+}
+Engine::rack_elem* Engine::setupVar(){
+	rack_elem* res;
+	size_t numModule=getNumModules();
+		int64_t* idList=new int64_t[numModule];
+		getModuleIds(idList,numModule);
+		for(int i=0;i<numModule;i++){
+			Module* mod=getModule(idList[i]);
+			if (mod->model->name.c_str()=="VCV VC0"){res->vco=mod;}
+			if (mod->model->name.c_str()=="VCV VCA"){res->vca=mod;}
+			if (mod->model->name.c_str()=="DISTRHO Audio 2"){res->host_audio=mod;}
+			if (mod->model->name.c_str()=="DISTRHO Host MIDI CC"){res->host_midi;}
+		}
+	return res;
 }
 
 
