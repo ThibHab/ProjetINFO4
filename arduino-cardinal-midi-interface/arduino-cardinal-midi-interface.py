@@ -13,7 +13,7 @@ def read_serial_data():
     return arduino.readline().decode('utf8', errors='ignore').strip()
 
 def process_data(data):
-    serial_output = data.split(',', 1)
+    serial_output = data.split(',')
     if len(serial_output) == 2 and serial_output[0] != '' and serial_output[1] != '':
         cut_data = int(serial_output[1]) - 950
         scaled_data = cut_data * (1023 / (1023 - 950))
