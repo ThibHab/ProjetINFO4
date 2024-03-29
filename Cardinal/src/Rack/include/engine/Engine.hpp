@@ -241,7 +241,9 @@ struct Engine {
 		Module* host_audio;
 	};
 
-	rack_elem* setupVar();
+	void setupVar();
+
+	void setupConnection();
 	
 };
 

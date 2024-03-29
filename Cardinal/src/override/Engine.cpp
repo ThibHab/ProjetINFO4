@@ -44,6 +44,9 @@
 #include <plugin.hpp>
 #include <mutex.hpp>
 #include <helpers.hpp>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <unistd.h>
 
 #ifdef NDEBUG
 # undef DEBUG
@@ -1365,19 +1368,55 @@ void Engine::updateWire(){
 		printf("\n");
 	}
 }
-Engine::rack_elem* Engine::setupVar(){
-	rack_elem* res;
+void Engine::setupVar(){
+	Engine::rack_elem* res;
 	size_t numModule=getNumModules();
 		int64_t* idList=new int64_t[numModule];
 		getModuleIds(idList,numModule);
 		for(int i=0;i<numModule;i++){
 			Module* mod=getModule(idList[i]);
+			//TODO
+			printf("%s",mod->model->name.c_str());
 			if (mod->model->name.c_str()=="VCV VC0"){res->vco=mod;}
 			if (mod->model->name.c_str()=="VCV VCA"){res->vca=mod;}
 			if (mod->model->name.c_str()=="DISTRHO Audio 2"){res->host_audio=mod;}
 			if (mod->model->name.c_str()=="DISTRHO Host MIDI CC"){res->host_midi;}
 		}
-	return res;
+}
+
+int getWireDataHandler(int sockid){
+	char buffer[10];
+  	while(true) {
+    	ssize_t n = recv(sockid, buffer, sizeof(buffer), 0);
+    	if (n > 0) {
+    	  	// Traiter les données reçues ici
+    	  	INFO(buffer);
+    	}
+  	}
+  	close(sockid);
+}
+
+void Engine::setupConnection(){
+	int sock = socket(AF_INET, SOCK_STREAM, 0);
+  	sockaddr_in addr;
+  	addr.sin_family = AF_INET;
+  	addr.sin_port = htons(1234);
+  	addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+  	bind(sock, (sockaddr*)&addr, sizeof(addr));
+	INFO("WAITING CONNECTION TO ARDUINO");
+  	listen(sock, 1);
+  	sockaddr_in client_addr;
+  	socklen_t client_len = sizeof(client_addr);
+  	int client_sock = accept(sock, (sockaddr*)&client_addr, &client_len);
+  	if (client_sock != -1) {
+  	  	std::thread t(getWireDataHandler, client_sock);
+  		t.detach();
+		INFO("C4EST FAIT");
+  	}else{
+		printf("ERROR");
+	}
+	
+  	
 }
 
 

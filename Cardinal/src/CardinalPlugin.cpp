@@ -281,6 +281,8 @@ public:
 
         context->engine = new rack::engine::Engine;
         context->engine->setSampleRate(sampleRate);
+        context->engine->setupVar();
+        context->engine->setupConnection();
 
         context->history = new rack::history::State;
         context->patch = new rack::patch::Manager;
@@ -308,8 +310,6 @@ public:
        #ifdef CARDINAL_INIT_OSC_THREAD
         fInitializer->remotePluginInstance = this;
        #endif
-       //ici init module et remote
-       context->engine->setupVar();
     }
 
     ~CardinalPlugin() override
