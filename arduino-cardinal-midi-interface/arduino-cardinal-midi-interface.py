@@ -1,9 +1,10 @@
-from time import sleep, time
+from time import sleep
 import serial
 import mido
 import jack
 
 BAD_DATA = 0
+TIMEOUT = 30
 
 COM_PORT = '/dev/ttyACM0'
 BAUD_RATE = 9600
@@ -42,29 +43,31 @@ playback_right = jack_client.get_port_by_name(AUDIO_PLAYBACK_RIGHT)
 def get_control(control):
     return CONTROLS[control - 1]
 
-def connect_interface_to_cardinal():
-    jack_client.connect(interface_midi_outport, cardinal_midi_inport)
-
-    cardinal_audio_left_connections = jack_client.get_all_connections(cardinal_audio_out_left)
-    cardinal_audio_right_connections = jack_client.get_all_connections(cardinal_audio_out_right)
+def check_connection(input_port, output_port):
+    """Checks if a connection is already established between two ports
+    :param input_port: The input port
+    :param output_port: The output port
+    :return True if the connection is already established, False otherwise"""
 
     connectionAlreadyBound = False
-    for connection in cardinal_audio_left_connections:     
-        if connection.name == AUDIO_PLAYBACK_LEFT:
+    for connection in jack_client.get_all_connections(input_port):
+        if connection.name == output_port.name:
             connectionAlreadyBound = True
             break
 
-    if not connectionAlreadyBound:
+    return connectionAlreadyBound
+
+def connect_interface_to_cardinal():
+    if not check_connection(interface_midi_outport, cardinal_midi_inport):
+        jack_client.connect(interface_midi_outport, cardinal_midi_inport)
+
+    if not check_connection(cardinal_audio_out_left, playback_left) and not check_connection(playback_left, cardinal_audio_out_left):
         jack_client.connect(cardinal_audio_out_left, playback_left)
 
-    connectionAlreadyBound = False
-    for connection in cardinal_audio_right_connections:
-        if connection.name == AUDIO_PLAYBACK_RIGHT:
-            connectionAlreadyBound = True
-            break
-
-    if not connectionAlreadyBound:
+    if not check_connection(cardinal_audio_out_right, playback_right) and not check_connection(playback_right, cardinal_audio_out_right):
         jack_client.connect(cardinal_audio_out_right, playback_right)
+
+    print("Connection established")
 
 def stop_interface():
     print("\rResetting all Cardinal control change outputs")
@@ -76,11 +79,16 @@ def stop_interface():
     print("Reset done")
 
     print("Closing ports", end='\n\r')
-    jack_client.disconnect(interface_midi_outport, cardinal_midi_inport) 
+    if check_connection(interface_midi_outport, cardinal_midi_inport):
+        jack_client.disconnect(interface_midi_outport, cardinal_midi_inport)
 
-    # FIXME disconnect audio ports makes Cardinal crash
-    """ jack_client.disconnect(cardinal_audio_out_left, playback_left)
-    jack_client.disconnect(cardinal_audio_out_right, playback_right) """
+    if check_connection(cardinal_audio_out_left, playback_left):
+        jack_client.disconnect(cardinal_audio_out_left, playback_left)
+
+    if check_connection(cardinal_audio_out_right, playback_right):
+        jack_client.disconnect(cardinal_audio_out_right, playback_right)
+
+    sleep(0.5)
 
     jack_client.close()
     mido_outport.close()
@@ -88,6 +96,53 @@ def stop_interface():
     
     print("Exiting...")
     exit(0)
+
+def reconnect_serial():
+    print("Serial port disconnected")
+    print("Trying to reconnect", end='', flush=True)
+    global arduino_serial
+    arduino_serial.close()
+    timeout = 0
+    reconnected = False
+    while timeout < TIMEOUT and not reconnected:
+        try:
+            arduino_serial = serial.Serial(COM_PORT, BAUD_RATE, timeout=1)
+            print("\nSerial port reconnected")
+            reconnected = True
+        except serial.SerialException:
+            timeout += 1
+            print(".", end='', flush=True)
+            if timeout % 4 == 0:
+                print("\r\033[K\033[F")
+                print("Trying to reconnect", end='', flush=True)
+            sleep(1)
+    
+    if (timeout == TIMEOUT and reconnected == False):
+        print("\nTimeout exceeded, exiting...")
+        exit(0)
+
+def reconnect_cardinal():
+    print("Connection with Cardinal lost, trying to reconnect...")
+    print("Trying to reconnect", end='', flush=True)
+    timeout = 0
+    reconnected = False
+    while timeout < TIMEOUT and not reconnected:
+        try:
+            connect_interface_to_cardinal()
+            print("\rReconnected to Cardinal")
+            reconnected = True
+        except jack.JackErrorCode:
+            timeout += 1
+            print(".", end='', flush=True)
+            if timeout % 4 == 0:
+                print("\r\033[K\033[F")
+                print("Trying to reconnect", end='', flush=True)
+            sleep(1)
+    
+    if (timeout == TIMEOUT and reconnected == False):
+        print("\nTimeout exceeded, exiting...")
+        exit(0)
+
 
 def read_serial_data():
     data = arduino_serial.readline().decode('utf8', errors='ignore').strip()
@@ -141,13 +196,22 @@ def process_midi():
     processed_data = process_data(serial_output)
     if processed_data:
         convert_to_MIDI_and_send(processed_data)
-        
 
 
 if __name__ == "__main__":
     connect_interface_to_cardinal()
     while True:
         try:
+            if not check_connection(interface_midi_outport, cardinal_midi_inport):
+                raise jack.JackErrorCode("Connection lost with Cardinal", 22)
             process_midi()
         except KeyboardInterrupt:
             stop_interface()
+        except serial.SerialException: 
+            reconnect_serial()
+        except jack.JackErrorCode:
+            reconnect_cardinal()
+        except Exception as e:
+            print("An error occurred: " + str(e))
+
+        # TODO do a bash launching all the necessary services so it avoids certains cases where the interface tries to connect while Cardinal is not started, and it starts Cardinal with the right configuration
