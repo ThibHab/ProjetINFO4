@@ -10,9 +10,10 @@ print("Connection on {}".format(port))
 
 #test envoi de paquets
 for i in range(10):
-    b = bytes(str(i)*10, 'utf-8')
+    b = bytes("1:2/3:4/00", 'utf-8')
     socket.send(b)
     sleep(2)
+input()
 
 print("Close")
 socket.close()

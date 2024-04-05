@@ -1386,14 +1386,17 @@ void Engine::setupVar(){
 
 int getWireDataHandler(int sockid){
 	char buffer[10];
-  	while(true) {
+	bool finish=false;
+  	while(!finish) {
     	ssize_t n = recv(sockid, buffer, sizeof(buffer), 0);
-    	if (n > 0) {
-    	  	// Traiter les données reçues ici
-    	  	INFO(buffer);
-    	}
+		if (n<=0){
+			INFO("PROBLEME DE SOCKET");
+			finish=true;
+		}
+		if(n>0){
+			INFO("%s\n",buffer);
+		}
   	}
-  	close(sockid);
 }
 
 void Engine::setupConnection(){
