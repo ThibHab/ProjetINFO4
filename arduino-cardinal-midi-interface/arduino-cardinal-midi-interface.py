@@ -2,7 +2,6 @@ from time import sleep
 import serial
 import mido
 import jack
-import signal
 
 BAD_DATA = 0
 TIMEOUT = 30
@@ -261,7 +260,7 @@ def process_midi():
     """
     Groups the methods that handle the data from the reading to the sending
     """
-    
+
     serial_output = read_serial_data()
     processed_data = process_data(serial_output)
     if processed_data:
