@@ -186,6 +186,7 @@ def read_serial_data():
     Reads the data that is sent on the serial port on which the Arduino board and the interface are connected
 
     The data contains the device pin that has sent it and it's value
+    
     :return the raw data read on the serial port in the following format : device_id, value
     """
 
