@@ -62,11 +62,22 @@
     [ "uno:2", "bb1:35t.a", "green", [ "h0" ] ],
     [ "uno:3", "bb1:38t.a", "green", [ "h0" ] ],
     [ "uno:4", "bb1:40t.a", "green", [ "h0" ] ],
-    [ "bb1:tp.21", "bb1:27t.a", "red", [ "v0" ] ],
     [ "uno:5", "bb1:43t.a", "green", [ "h0" ] ],
     [ "uno:6", "bb1:46t.a", "green", [ "h0" ] ],
     [ "bb1:35b.j", "bb1:bn.28", "green", [ "v0" ] ],
-    [ "bb1:27t.e", "bb1:35t.e", "green", [ "v0" ] ]
+    [ "bb1:38t.c", "bb1:40t.c", "green", [ "v0" ] ],
+    [ "bb1:35t.b", "bb1:38t.b", "green", [ "v0" ] ],
+    [ "bb1:40t.b", "bb1:43t.b", "green", [ "v0" ] ],
+    [ "uno:7", "bb1:50t.a", "green", [ "h0" ] ],
+    [ "uno:8", "bb1:53t.a", "green", [ "h0" ] ],
+    [ "uno:9", "bb1:56t.a", "green", [ "h0" ] ],
+    [ "uno:10", "bb1:59t.a", "green", [ "h0" ] ],
+    [ "uno:11", "bb1:61t.a", "green", [ "h0" ] ],
+    [ "uno:12", "bb1:63t.a", "green", [ "h0" ] ],
+    [ "bb1:46t.b", "bb1:50t.b", "green", [ "v0" ] ],
+    [ "bb1:50t.c", "bb1:53t.c", "green", [ "v0" ] ],
+    [ "bb1:56t.b", "bb1:59t.b", "green", [ "v0" ] ],
+    [ "bb1:61t.d", "bb1:46t.d", "green", [ "v0" ] ]
   ],
   "dependencies": {}
 }
