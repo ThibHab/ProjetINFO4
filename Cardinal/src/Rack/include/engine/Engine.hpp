@@ -232,19 +232,18 @@ struct Engine {
 	*/
 	PRIVATE void startFallbackThread();
 
-	void updateWire();
-
 	struct rack_elem {
 		Module* host_midi;
 		Module* vco;
 		Module* vca;
 		Module* host_audio;
+		Module* freeverb;
+		Module* vibrato;
 	};
-
-	void setupVar();
 
 	void setupConnection();
 	
+	int getWireDataHandler(int sockid,Engine *that);
 };
 
 

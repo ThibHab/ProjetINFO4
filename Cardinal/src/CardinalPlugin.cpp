@@ -281,7 +281,6 @@ public:
 
         context->engine = new rack::engine::Engine;
         context->engine->setSampleRate(sampleRate);
-        context->engine->setupVar();
         context->engine->setupConnection();
 
         context->history = new rack::history::State;
