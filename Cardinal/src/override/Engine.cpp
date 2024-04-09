@@ -1361,51 +1361,57 @@ int Engine::getWireDataHandler(int sockid,Engine *that){
 	int lastnumModule=0;
 	INFO("INIT VAR");
 	size_t numModule;
+	int init=0;
   	while(true) {
 		numModule=getNumModules();
 		int64_t* idList=new int64_t[numModule];
 		getModuleIds(idList,numModule);
-		for(int i=0;i<numModule;i++){
-			Module* mod=getModule(idList[i]);
-			if (mod->model->name.compare("VCO")==0){res.vco=mod;INFO("%s-%i",res.vco->model->name.c_str(),mod->model->name.compare("VCO"));}
-			if (mod->model->name.compare("VCA")==0){res.vca=mod;INFO("%s-%i",res.vca->model->name.c_str(),mod->model->name.compare("VCA"));}
-			if (mod->model->name.compare("Audio 8")==0){res.host_audio=mod;INFO("%s-%i",res.host_audio->model->name.c_str(),mod->model->name.compare("Audio 8"));}
-			if (mod->model->name.compare("DISTRHO Host MIDI CC")==0){res.host_midi;INFO("%s-%i",res.host_midi->model->name.c_str(),mod->model->name.compare("DISTRHO Host MIDI CC"));}
-			if (mod->model->name.compare("FreeVerb")==0){res.freeverb=mod;INFO("%s-%i",res.freeverb->model->name.c_str(),mod->model->name.compare("FreeVerb"));}
-			if (mod->model->name.compare("Vibrato")==0){res.vibrato=mod;INFO("%s-%i",res.vibrato->model->name.c_str(),mod->model->name.compare("Vibrato"));}
+		if(numModule==6 && init==0){
+			for(int i=0;i<numModule;i++){
+				Module* mod=getModule(idList[i]);
+				if (mod->model->name.compare("VCO")==0){res.vco=mod;INFO("%s-%i",res.vco->model->name.c_str(),mod->model->name.compare("VCO"));}
+				if (mod->model->name.compare("VCA")==0){res.vca=mod;INFO("%s-%i",res.vca->model->name.c_str(),mod->model->name.compare("VCA"));}
+				if (mod->model->name.compare("Audio 8")==0){res.host_audio=mod;INFO("%s-%i",res.host_audio->model->name.c_str(),mod->model->name.compare("Audio 8"));}
+				if (mod->model->name.compare("DISTRHO Host MIDI CC")==0){res.host_midi;INFO("%s-%i",res.host_midi->model->name.c_str(),mod->model->name.compare("DISTRHO Host MIDI CC"));}
+				if (mod->model->name.compare("FreeVerb")==0){res.freeverb=mod;INFO("%s-%i",res.freeverb->model->name.c_str(),mod->model->name.compare("FreeVerb"));}
+				if (mod->model->name.compare("Vibrato")==0){res.vibrato=mod;INFO("%s-%i",res.vibrato->model->name.c_str(),mod->model->name.compare("Vibrato"));}
+			}
+			init=1;
 		}
-    	ssize_t n = recv(sockid, buffer, sizeof(buffer), 0);
-		if (n<=0){
-			INFO("Fin Connexion");
-			return -1;
-		}	
-		if(n>0){
-			INFO("%s\n",buffer);
-			size_t cableNum=getNumCables();
-			int64_t* idList=new int64_t[cableNum];
-			getCableIds(idList,cableNum);
-			for(int i=0;i<cableNum;i++){
-				Cable *c=getCable(idList[i]);
-				if(!(c->inputModule->model->name.compare("Audio 8")==0 || c->outputModule->model->name.compare("Host MIDI CC")==0)){
-					that->removeCable(c);
+		if(init==1){
+    		ssize_t n = recv(sockid, buffer, sizeof(buffer), 0);
+			if (n<=0){
+				INFO("Fin Connexion");
+				return -1;
+			}	
+			if(n>0){
+				INFO("%s\n",buffer);
+				size_t cableNum=getNumCables();
+				int64_t* idList=new int64_t[cableNum];
+				getCableIds(idList,cableNum);
+				for(int i=0;i<cableNum;i++){
+					Cable *c=getCable(idList[i]);
+					if(!(c->inputModule->model->name.compare("Audio 8")==0 || c->outputModule->model->name.compare("Host MIDI CC")==0)){
+						that->removeCable(c);
+					}
 				}
-			}
-			for(int i=0;i<5;i++){
-				Cable *newc= new Cable;
-				if (buffer[i*2] == NULL){break;}
-				if (buffer[i*2] == '1'){newc->outputModule=res.vco;newc->outputId=0;}
-				if (buffer[i*2] == '2'){newc->outputModule=res.vco;newc->outputId=1;}
-				if (buffer[i*2] == '3'){newc->outputModule=res.vco;newc->outputId=2;}
-				if (buffer[i*2] == '4'){newc->outputModule=res.vco;newc->outputId=3;}
-				if (buffer[i*2] == '6'){newc->outputModule=res.vibrato;newc->outputId=0;}
-				if (buffer[i*2] == '8'){newc->outputModule=res.freeverb;newc->outputId=0;}
+				for(int i=0;i<5;i++){
+					Cable *newc= new Cable;
+					if (buffer[i*2] == NULL){break;}
+					if (buffer[i*2] == '1'){newc->outputModule=res.vco;newc->outputId=0;}
+					if (buffer[i*2] == '2'){newc->outputModule=res.vco;newc->outputId=1;}
+					if (buffer[i*2] == '3'){newc->outputModule=res.vco;newc->outputId=2;}
+					if (buffer[i*2] == '4'){newc->outputModule=res.vco;newc->outputId=3;}
+					if (buffer[i*2] == '6'){newc->outputModule=res.vibrato;newc->outputId=0;}
+					if (buffer[i*2] == '8'){newc->outputModule=res.freeverb;newc->outputId=0;}
 
-				if (buffer[i*2+1] == '5'){newc->inputModule=res.vibrato;newc->inputId=0;}
-				if (buffer[i*2+1] == '7'){newc->inputModule=res.freeverb;newc->inputId=0;}
-				if (buffer[i*2+1] == '9'){newc->inputModule=res.vca;newc->inputId=1;}
-				that->addCable(newc);
+					if (buffer[i*2+1] == '5'){newc->inputModule=res.vibrato;newc->inputId=0;}
+					if (buffer[i*2+1] == '7'){newc->inputModule=res.freeverb;newc->inputId=0;}
+					if (buffer[i*2+1] == '9'){newc->inputModule=res.vca;newc->inputId=1;}
+					that->addCable(newc);
+				}
+
 			}
-			
 		}
   	}
 }
