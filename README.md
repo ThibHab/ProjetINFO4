@@ -35,6 +35,11 @@ Répartition des Tâches
     Yann : Découverte de PipeWire et qpwgraph, alternative plus récente à JACK et qjackctl pour modifier les E/S audio.
     Gwénolé : Mapping et programmation Arduino.
 
+Changement d'Objectifs
+
+    Réorientation des efforts sur la modification direct du code de 
+    Cardinal. Le Chemin étant plus prometteur
+
 Semaine 4
 
     Thibaut : Progrès dans la modification du code, mais compilation toujours infructueuse.
@@ -44,3 +49,23 @@ Semaine 4
 Semaine 5
 
     Yann : Réalisation de l'interface Arduino-Python.
+    Thibaut : Progrès dans la modification du programme, réussite dans la compilation du pogramme. 
+    Gwénolé : Modification de la map arduino pour mieux répondre aux contraintes
+
+Semaine 6
+
+    Thibaut : Continuation du travail sur la réalisation de connexions automatiques
+    Gwénolé : Formattage des outputs arduino, Ajout de la détection d'erreurs
+    Yann : Travail sur la normalisation des inputs/outputs
+
+
+Semaine 7
+
+    Thibaut : Continuation du travail sur la réalisation de connexions automatiques
+    Gwénolé + Yann : Mise en accord sur le format des échanges entre cardinal et l'arduino
+
+
+Semaine 8 : Partiels
+
+    thibaut : Finition
+    Gwénolé + Yann : 
