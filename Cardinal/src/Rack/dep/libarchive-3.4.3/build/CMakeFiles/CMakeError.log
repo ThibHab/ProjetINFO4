@@ -1,0 +1,1767 @@
+The C compiler identification could not be found in "/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/3.22.1/CompilerIdC/a-CMakeCCompilerId.d"
+
+Determining if files sys/types.h;acl/libacl.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d92c9/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_d92c9.dir/build.make CMakeFiles/cmTC_d92c9.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_d92c9.dir/HAVE_ACL_LIBACL_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_d92c9.dir/HAVE_ACL_LIBACL_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_ACL_LIBACL_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_ACL_LIBACL_H.c:3:10: fatal error: acl/libacl.h: Aucun fichier ou dossier de ce nom
+    3 | #include <acl/libacl.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_d92c9.dir/build.make:78 : CMakeFiles/cmTC_d92c9.dir/HAVE_ACL_LIBACL_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_d92c9/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <acl/libacl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;attr/xattr.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6e514/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_6e514.dir/build.make CMakeFiles/cmTC_6e514.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6e514.dir/HAVE_ATTR_XATTR_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_6e514.dir/HAVE_ATTR_XATTR_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_ATTR_XATTR_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_ATTR_XATTR_H.c:3:10: fatal error: attr/xattr.h: Aucun fichier ou dossier de ce nom
+    3 | #include <attr/xattr.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_6e514.dir/build.make:78 : CMakeFiles/cmTC_6e514.dir/HAVE_ATTR_XATTR_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_6e514/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <attr/xattr.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;copyfile.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e8d36/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_e8d36.dir/build.make CMakeFiles/cmTC_e8d36.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_e8d36.dir/HAVE_COPYFILE_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_e8d36.dir/HAVE_COPYFILE_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_COPYFILE_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_COPYFILE_H.c:4:10: fatal error: copyfile.h: Aucun fichier ou dossier de ce nom
+    4 | #include <copyfile.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_e8d36.dir/build.make:78 : CMakeFiles/cmTC_e8d36.dir/HAVE_COPYFILE_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_e8d36/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <copyfile.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;direct.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6faa9/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_6faa9.dir/build.make CMakeFiles/cmTC_6faa9.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6faa9.dir/HAVE_DIRECT_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_6faa9.dir/HAVE_DIRECT_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_DIRECT_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_DIRECT_H.c:4:10: fatal error: direct.h: Aucun fichier ou dossier de ce nom
+    4 | #include <direct.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_6faa9.dir/build.make:78 : CMakeFiles/cmTC_6faa9.dir/HAVE_DIRECT_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_6faa9/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <direct.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;ext2fs/ext2_fs.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47475/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_47475.dir/build.make CMakeFiles/cmTC_47475.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_47475.dir/HAVE_EXT2FS_EXT2_FS_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_47475.dir/HAVE_EXT2FS_EXT2_FS_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_EXT2FS_EXT2_FS_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_EXT2FS_EXT2_FS_H.c:6:10: fatal error: ext2fs/ext2_fs.h: Aucun fichier ou dossier de ce nom
+    6 | #include <ext2fs/ext2_fs.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_47475.dir/build.make:78 : CMakeFiles/cmTC_47475.dir/HAVE_EXT2FS_EXT2_FS_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_47475/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <ext2fs/ext2_fs.h>
+
+
+int main(void){return 0;}
+
+Performing C SOURCE FILE Test HAVE_WORKING_EXT2_IOC_GETFLAGS failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6cdad/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_6cdad.dir/build.make CMakeFiles/cmTC_6cdad.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6cdad.dir/src.c.o
+/usr/bin/cc -DHAVE_WORKING_EXT2_IOC_GETFLAGS  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_6cdad.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:2:10: fatal error: ext2fs/ext2_fs.h: Aucun fichier ou dossier de ce nom
+    2 | #include <ext2fs/ext2_fs.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_6cdad.dir/build.make:78 : CMakeFiles/cmTC_6cdad.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_6cdad/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+#include <sys/ioctl.h>
+#include <ext2fs/ext2_fs.h>
+int main(void) { return EXT2_IOC_GETFLAGS; }
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;io.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0513a/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_0513a.dir/build.make CMakeFiles/cmTC_0513a.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0513a.dir/HAVE_IO_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_0513a.dir/HAVE_IO_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_IO_H.c:9:10: fatal error: io.h: Aucun fichier ou dossier de ce nom
+    9 | #include <io.h>
+      |          ^~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_0513a.dir/build.make:78 : CMakeFiles/cmTC_0513a.dir/HAVE_IO_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_0513a/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;membership.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2abc1/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_2abc1.dir/build.make CMakeFiles/cmTC_2abc1.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_2abc1.dir/HAVE_MEMBERSHIP_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_2abc1.dir/HAVE_MEMBERSHIP_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_MEMBERSHIP_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_MEMBERSHIP_H.c:16:10: fatal error: membership.h: Aucun fichier ou dossier de ce nom
+   16 | #include <membership.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_2abc1.dir/build.make:78 : CMakeFiles/cmTC_2abc1.dir/HAVE_MEMBERSHIP_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_2abc1/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <membership.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;process.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0ce60/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_0ce60.dir/build.make CMakeFiles/cmTC_0ce60.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0ce60.dir/HAVE_PROCESS_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_0ce60.dir/HAVE_PROCESS_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_PROCESS_H.c:19:10: fatal error: process.h: Aucun fichier ou dossier de ce nom
+   19 | #include <process.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_0ce60.dir/build.make:78 : CMakeFiles/cmTC_0ce60.dir/HAVE_PROCESS_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_0ce60/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <process.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;readpassphrase.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c868/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_0c868.dir/build.make CMakeFiles/cmTC_0c868.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_0c868.dir/HAVE_READPASSPHRASE_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_0c868.dir/HAVE_READPASSPHRASE_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_READPASSPHRASE_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_READPASSPHRASE_H.c:21:10: fatal error: readpassphrase.h: Aucun fichier ou dossier de ce nom
+   21 | #include <readpassphrase.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_0c868.dir/build.make:78 : CMakeFiles/cmTC_0c868.dir/HAVE_READPASSPHRASE_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_0c868/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <readpassphrase.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_13f34/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_13f34.dir/build.make CMakeFiles/cmTC_13f34.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_13f34.dir/HAVE_SYS_ACL_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_13f34.dir/HAVE_SYS_ACL_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ACL_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_ACL_H.c:29:10: fatal error: sys/acl.h: Aucun fichier ou dossier de ce nom
+   29 | #include <sys/acl.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_13f34.dir/build.make:78 : CMakeFiles/cmTC_13f34.dir/HAVE_SYS_ACL_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_13f34/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/extattr.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25099/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_25099.dir/build.make CMakeFiles/cmTC_25099.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_25099.dir/HAVE_SYS_EXTATTR_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_25099.dir/HAVE_SYS_EXTATTR_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_EXTATTR_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_EXTATTR_H.c:30:10: fatal error: sys/extattr.h: Aucun fichier ou dossier de ce nom
+   30 | #include <sys/extattr.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_25099.dir/build.make:78 : CMakeFiles/cmTC_25099.dir/HAVE_SYS_EXTATTR_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_25099/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/extattr.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/mkdev.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_92fe9/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_92fe9.dir/build.make CMakeFiles/cmTC_92fe9.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_92fe9.dir/HAVE_SYS_MKDEV_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_92fe9.dir/HAVE_SYS_MKDEV_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MKDEV_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MKDEV_H.c:31:10: fatal error: sys/mkdev.h: Aucun fichier ou dossier de ce nom
+   31 | #include <sys/mkdev.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_92fe9.dir/build.make:78 : CMakeFiles/cmTC_92fe9.dir/HAVE_SYS_MKDEV_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_92fe9/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mkdev.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/mount.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5f179/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_5f179.dir/build.make CMakeFiles/cmTC_5f179.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_5f179.dir/HAVE_SYS_MOUNT_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_5f179.dir/HAVE_SYS_MOUNT_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MOUNT_H.c
+In file included from /usr/include/linux/fs.h:19,
+                 from /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_MOUNT_H.c:13:
+/usr/include/x86_64-linux-gnu/sys/mount.h:35:3: error: expected identifier before numeric constant
+   35 |   MS_RDONLY = 1,                /* Mount read-only.  */
+      |   ^~~~~~~~~
+gmake[4]: *** [CMakeFiles/cmTC_5f179.dir/build.make:78 : CMakeFiles/cmTC_5f179.dir/HAVE_SYS_MOUNT_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_5f179/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mount.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/richacl.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_34ece/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_34ece.dir/build.make CMakeFiles/cmTC_34ece.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_34ece.dir/HAVE_SYS_RICHACL_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_34ece.dir/HAVE_SYS_RICHACL_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RICHACL_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_RICHACL_H.c:33:10: fatal error: sys/richacl.h: Aucun fichier ou dossier de ce nom
+   33 | #include <sys/richacl.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_34ece.dir/build.make:78 : CMakeFiles/cmTC_34ece.dir/HAVE_SYS_RICHACL_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_34ece/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/richacl.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utime.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_07c3c/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_07c3c.dir/build.make CMakeFiles/cmTC_07c3c.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_07c3c.dir/HAVE_SYS_UTIME_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_07c3c.dir/HAVE_SYS_UTIME_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UTIME_H.c:39:10: fatal error: sys/utime.h: Aucun fichier ou dossier de ce nom
+   39 | #include <sys/utime.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_07c3c.dir/build.make:78 : CMakeFiles/cmTC_07c3c.dir/HAVE_SYS_UTIME_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_07c3c/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utime.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;sys/xattr.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;windows.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a5d9/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_6a5d9.dir/build.make CMakeFiles/cmTC_6a5d9.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6a5d9.dir/HAVE_WINDOWS_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_6a5d9.dir/HAVE_WINDOWS_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_WINDOWS_H.c:48:10: fatal error: windows.h: Aucun fichier ou dossier de ce nom
+   48 | #include <windows.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_6a5d9.dir/build.make:78 : CMakeFiles/cmTC_6a5d9.dir/HAVE_WINDOWS_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_6a5d9/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <sys/xattr.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;sys/xattr.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;wincrypt.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8d744/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_8d744.dir/build.make CMakeFiles/cmTC_8d744.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_8d744.dir/HAVE_WINCRYPT_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_8d744.dir/HAVE_WINCRYPT_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_WINCRYPT_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_WINCRYPT_H.c:48:10: fatal error: wincrypt.h: Aucun fichier ou dossier de ce nom
+   48 | #include <wincrypt.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_8d744.dir/build.make:78 : CMakeFiles/cmTC_8d744.dir/HAVE_WINCRYPT_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_8d744/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <sys/xattr.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <wincrypt.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pthread.h;pwd.h;regex.h;signal.h;spawn.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/sysmacros.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;sys/xattr.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;winioctl.h exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_033d4/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_033d4.dir/build.make CMakeFiles/cmTC_033d4.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_033d4.dir/HAVE_WINIOCTL_H.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_033d4.dir/HAVE_WINIOCTL_H.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_WINIOCTL_H.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckIncludeFiles/HAVE_WINIOCTL_H.c:48:10: fatal error: winioctl.h: Aucun fichier ou dossier de ce nom
+   48 | #include <winioctl.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_033d4.dir/build.make:78 : CMakeFiles/cmTC_033d4.dir/HAVE_WINIOCTL_H.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_033d4/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <spawn.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/sysmacros.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <sys/xattr.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <winioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if the function MD5Init exists in the md failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6e284/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_6e284.dir/build.make CMakeFiles/cmTC_6e284.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6e284.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=MD5Init -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_6e284.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6e284
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e284.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=MD5Init -Wall -Wformat -Wformat-security -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_6e284.dir/CheckFunctionExists.c.o -o cmTC_6e284  -lmd 
+/usr/bin/ld : ne peut pas trouver -lmd : Aucun fichier ou dossier de ce nom
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_6e284.dir/build.make:99 : cmTC_6e284] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_6e284/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the _CrtSetReportMode exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a53ac/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_a53ac.dir/build.make CMakeFiles/cmTC_a53ac.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_a53ac.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_a53ac.dir/CheckSymbolExists.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: crtdbg.h: Aucun fichier ou dossier de ce nom
+    2 | #include <crtdbg.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_a53ac.dir/build.make:78 : CMakeFiles/cmTC_a53ac.dir/CheckSymbolExists.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_a53ac/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+File /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <crtdbg.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _CrtSetReportMode
+  return ((int*)(&_CrtSetReportMode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function arc4random_buf exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_35ff9/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_35ff9.dir/build.make CMakeFiles/cmTC_35ff9.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_35ff9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=arc4random_buf -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_35ff9.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_35ff9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35ff9.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=arc4random_buf -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_35ff9.dir/CheckFunctionExists.c.o -o cmTC_35ff9 
+/usr/bin/ld : CMakeFiles/cmTC_35ff9.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « arc4random_buf »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_35ff9.dir/build.make:99 : cmTC_35ff9] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_35ff9/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function getvfsbyname exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_36e60/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_36e60.dir/build.make CMakeFiles/cmTC_36e60.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_36e60.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=getvfsbyname -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_36e60.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_36e60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36e60.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=getvfsbyname -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_36e60.dir/CheckFunctionExists.c.o -o cmTC_36e60 
+/usr/bin/ld : CMakeFiles/cmTC_36e60.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « getvfsbyname »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_36e60.dir/build.make:99 : cmTC_36e60] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_36e60/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function lchflags exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9116/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_c9116.dir/build.make CMakeFiles/cmTC_c9116.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_c9116.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=lchflags -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_c9116.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c9116
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9116.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=lchflags -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_c9116.dir/CheckFunctionExists.c.o -o cmTC_c9116 
+/usr/bin/ld : CMakeFiles/cmTC_c9116.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « lchflags »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_c9116.dir/build.make:99 : cmTC_c9116] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_c9116/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function readpassphrase exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fa13f/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_fa13f.dir/build.make CMakeFiles/cmTC_fa13f.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_fa13f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=readpassphrase -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_fa13f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa13f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa13f.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=readpassphrase -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_fa13f.dir/CheckFunctionExists.c.o -o cmTC_fa13f 
+/usr/bin/ld : CMakeFiles/cmTC_fa13f.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « readpassphrase »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_fa13f.dir/build.make:99 : cmTC_fa13f] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_fa13f/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function strncpy_s exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eace1/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_eace1.dir/build.make CMakeFiles/cmTC_eace1.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_eace1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strncpy_s -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_eace1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eace1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eace1.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=strncpy_s -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_eace1.dir/CheckFunctionExists.c.o -o cmTC_eace1 
+/usr/bin/ld : CMakeFiles/cmTC_eace1.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « strncpy_s »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_eace1.dir/build.make:99 : cmTC_eace1] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_eace1/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function _ctime64_s exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_af0c9/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_af0c9.dir/build.make CMakeFiles/cmTC_af0c9.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_af0c9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_ctime64_s -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_af0c9.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_af0c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af0c9.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_ctime64_s -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_af0c9.dir/CheckFunctionExists.c.o -o cmTC_af0c9 
+/usr/bin/ld : CMakeFiles/cmTC_af0c9.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « _ctime64_s »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_af0c9.dir/build.make:99 : cmTC_af0c9] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_af0c9/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function _fseeki64 exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_696f1/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_696f1.dir/build.make CMakeFiles/cmTC_696f1.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_696f1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_fseeki64 -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_696f1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_696f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_696f1.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_fseeki64 -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_696f1.dir/CheckFunctionExists.c.o -o cmTC_696f1 
+/usr/bin/ld : CMakeFiles/cmTC_696f1.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « _fseeki64 »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_696f1.dir/build.make:99 : cmTC_696f1] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_696f1/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function _get_timezone exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_77d0a/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_77d0a.dir/build.make CMakeFiles/cmTC_77d0a.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_77d0a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_get_timezone -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_77d0a.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_77d0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77d0a.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_get_timezone -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_77d0a.dir/CheckFunctionExists.c.o -o cmTC_77d0a 
+/usr/bin/ld : CMakeFiles/cmTC_77d0a.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « _get_timezone »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_77d0a.dir/build.make:99 : cmTC_77d0a] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_77d0a/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function _gmtime64_s exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58d66/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_58d66.dir/build.make CMakeFiles/cmTC_58d66.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_58d66.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_gmtime64_s -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_58d66.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_58d66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58d66.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_gmtime64_s -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_58d66.dir/CheckFunctionExists.c.o -o cmTC_58d66 
+/usr/bin/ld : CMakeFiles/cmTC_58d66.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « _gmtime64_s »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_58d66.dir/build.make:99 : cmTC_58d66] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_58d66/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function _localtime64_s exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dee96/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_dee96.dir/build.make CMakeFiles/cmTC_dee96.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_dee96.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_localtime64_s -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_dee96.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dee96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dee96.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_localtime64_s -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_dee96.dir/CheckFunctionExists.c.o -o cmTC_dee96 
+/usr/bin/ld : CMakeFiles/cmTC_dee96.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « _localtime64_s »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_dee96.dir/build.make:99 : cmTC_dee96] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_dee96/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function _mkgmtime64 exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3d5e4/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_3d5e4.dir/build.make CMakeFiles/cmTC_3d5e4.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_3d5e4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_mkgmtime64 -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_3d5e4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3d5e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d5e4.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=_mkgmtime64 -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_3d5e4.dir/CheckFunctionExists.c.o -o cmTC_3d5e4 
+/usr/bin/ld : CMakeFiles/cmTC_3d5e4.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « _mkgmtime64 »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_3d5e4.dir/build.make:99 : cmTC_3d5e4] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_3d5e4/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Determining if the function cygwin_conv_path exists failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_09c6e/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_09c6e.dir/build.make CMakeFiles/cmTC_09c6e.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_09c6e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=cygwin_conv_path -Wall -Wformat -Wformat-security -fno-builtin -o CMakeFiles/cmTC_09c6e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_09c6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09c6e.dir/link.txt --verbose=1
+/usr/bin/cc -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -DCHECK_FUNCTION_EXISTS=cygwin_conv_path -Wall -Wformat -Wformat-security -fno-builtin -fdata-sections -ffunction-sections -Wl,-O1,--as-needed,--gc-sections -Wl,--strip-all  -Wl,--no-undefined -fexceptions  -rdynamic CMakeFiles/cmTC_09c6e.dir/CheckFunctionExists.c.o -o cmTC_09c6e 
+/usr/bin/ld : CMakeFiles/cmTC_09c6e.dir/CheckFunctionExists.c.o : dans la fonction « main » :
+CheckFunctionExists.c:(.text.startup.main+0x10) : référence indéfinie vers « cygwin_conv_path »
+collect2: error: ld returned 1 exit status
+gmake[4]: *** [CMakeFiles/cmTC_09c6e.dir/build.make:99 : cmTC_09c6e] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_09c6e/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+
+Performing C SOURCE FILE Test HAVE_STRUCT_VFSCONF failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_72898/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_72898.dir/build.make CMakeFiles/cmTC_72898.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_72898.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_VFSCONF  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_72898.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:3:33: error: storage size of ‘v’ isn’t known
+    3 | int main(void) { struct vfsconf v; return sizeof(v);}
+      |                                 ^
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:3:33: warning: unused variable ‘v’ [-Wunused-variable]
+gmake[4]: *** [CMakeFiles/cmTC_72898.dir/build.make:78 : CMakeFiles/cmTC_72898.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_72898/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+#include <sys/types.h>
+#include <sys/mount.h>
+int main(void) { struct vfsconf v; return sizeof(v);}
+Performing C SOURCE FILE Test HAVE_STRUCT_XVFSCONF failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a6fe/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_3a6fe.dir/build.make CMakeFiles/cmTC_3a6fe.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_3a6fe.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_XVFSCONF  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_3a6fe.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:3:34: error: storage size of ‘v’ isn’t known
+    3 | int main(void) { struct xvfsconf v; return sizeof(v);}
+      |                                  ^
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:3:34: warning: unused variable ‘v’ [-Wunused-variable]
+gmake[4]: *** [CMakeFiles/cmTC_3a6fe.dir/build.make:78 : CMakeFiles/cmTC_3a6fe.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_3a6fe/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+#include <sys/types.h>
+#include <sys/mount.h>
+int main(void) { struct xvfsconf v; return sizeof(v);}
+Performing C SOURCE FILE Test MAJOR_IN_MKDEV failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d91ac/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_d91ac.dir/build.make CMakeFiles/cmTC_d91ac.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_d91ac.dir/src.c.o
+/usr/bin/cc -DMAJOR_IN_MKDEV  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_d91ac.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:1:10: fatal error: sys/mkdev.h: Aucun fichier ou dossier de ce nom
+    1 | #include <sys/mkdev.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_d91ac.dir/build.make:78 : CMakeFiles/cmTC_d91ac.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_d91ac/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+#include <sys/mkdev.h>
+int main() { return major(256); }
+Determining if the EFTYPE exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_459e3/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_459e3.dir/build.make CMakeFiles/cmTC_459e3.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_459e3.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_459e3.dir/CheckSymbolExists.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘EFTYPE’ undeclared (first use in this function)
+    8 |   return ((int*)(&EFTYPE))[argc];
+      |                   ^~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[4]: *** [CMakeFiles/cmTC_459e3.dir/build.make:78 : CMakeFiles/cmTC_459e3.dir/CheckSymbolExists.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_459e3/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+File /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef EFTYPE
+  return ((int*)(&EFTYPE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the D_MD_ORDER exist failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b8b7/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_8b8b7.dir/build.make CMakeFiles/cmTC_8b8b7.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_8b8b7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_8b8b7.dir/CheckSymbolExists.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘D_MD_ORDER’ undeclared (first use in this function)
+    8 |   return ((int*)(&D_MD_ORDER))[argc];
+      |                   ^~~~~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:4:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+    4 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+gmake[4]: *** [CMakeFiles/cmTC_8b8b7.dir/build.make:78 : CMakeFiles/cmTC_8b8b7.dir/CheckSymbolExists.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_8b8b7/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+File /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <langinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef D_MD_ORDER
+  return ((int*)(&D_MD_ORDER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_STRUCT_TM___TM_GMTOFF failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_abd0a/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_abd0a.dir/build.make CMakeFiles/cmTC_abd0a.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_abd0a.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_TM___TM_GMTOFF  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_abd0a.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:6:34: error: ‘struct tm’ has no member named ‘__tm_gmtoff’; did you mean ‘tm_gmtoff’?
+    6 |   (void)sizeof(((struct tm *)0)->__tm_gmtoff);
+      |                                  ^~~~~~~~~~~
+      |                                  tm_gmtoff
+gmake[4]: *** [CMakeFiles/cmTC_abd0a.dir/build.make:78 : CMakeFiles/cmTC_abd0a.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_abd0a/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+  (void)sizeof(((struct tm *)0)->__tm_gmtoff);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATFS_F_NAMEMAX failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e67bb/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_e67bb.dir/build.make CMakeFiles/cmTC_e67bb.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_e67bb.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STATFS_F_NAMEMAX  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_e67bb.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:36: error: invalid use of undefined type ‘struct statfs’
+    7 |   (void)sizeof(((struct statfs *)0)->f_namemax);
+      |                                    ^~
+gmake[4]: *** [CMakeFiles/cmTC_e67bb.dir/build.make:78 : CMakeFiles/cmTC_e67bb.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_e67bb/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/param.h>
+#include <sys/mount.h>
+
+int main()
+{
+  (void)sizeof(((struct statfs *)0)->f_namemax);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIME failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d6304/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_d6304.dir/build.make CMakeFiles/cmTC_d6304.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_d6304.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_BIRTHTIME  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_d6304.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_birthtime’
+    7 |   (void)sizeof(((struct stat *)0)->st_birthtime);
+      |                                  ^~
+gmake[4]: *** [CMakeFiles/cmTC_d6304.dir/build.make:78 : CMakeFiles/cmTC_d6304.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_d6304/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_birthtime);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_12c7e/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_12c7e.dir/build.make CMakeFiles/cmTC_12c7e.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_12c7e.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_12c7e.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_birthtimespec’
+    7 |   (void)sizeof(((struct stat *)0)->st_birthtimespec.tv_nsec);
+      |                                  ^~
+gmake[4]: *** [CMakeFiles/cmTC_12c7e.dir/build.make:78 : CMakeFiles/cmTC_12c7e.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_12c7e/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_birthtimespec.tv_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cc4ba/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_cc4ba.dir/build.make CMakeFiles/cmTC_cc4ba.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_cc4ba.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_cc4ba.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtimespec’
+    7 |   (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+      |                                  ^~
+gmake[4]: *** [CMakeFiles/cmTC_cc4ba.dir/build.make:78 : CMakeFiles/cmTC_cc4ba.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_cc4ba/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_N failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_afa69/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_afa69.dir/build.make CMakeFiles/cmTC_afa69.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_afa69.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIME_N  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_afa69.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:36: error: ‘struct stat’ has no member named ‘st_mtime_n’; did you mean ‘st_mtim’?
+    7 |   (void)sizeof(((struct stat *)0)->st_mtime_n);
+      |                                    ^~~~~~~~~~
+      |                                    st_mtim
+gmake[4]: *** [CMakeFiles/cmTC_afa69.dir/build.make:78 : CMakeFiles/cmTC_afa69.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_afa69/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_n);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_UMTIME failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b875/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_4b875.dir/build.make CMakeFiles/cmTC_4b875.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_4b875.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_UMTIME  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_4b875.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:36: error: ‘struct stat’ has no member named ‘st_umtime’; did you mean ‘st_mtim’?
+    7 |   (void)sizeof(((struct stat *)0)->st_umtime);
+      |                                    ^~~~~~~~~
+      |                                    st_mtim
+gmake[4]: *** [CMakeFiles/cmTC_4b875.dir/build.make:78 : CMakeFiles/cmTC_4b875.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_4b875/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_umtime);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_USEC failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_64e19/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_64e19.dir/build.make CMakeFiles/cmTC_64e19.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_64e19.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_MTIME_USEC  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_64e19.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_mtime_usec’
+    7 |   (void)sizeof(((struct stat *)0)->st_mtime_usec);
+      |                                  ^~
+gmake[4]: *** [CMakeFiles/cmTC_64e19.dir/build.make:78 : CMakeFiles/cmTC_64e19.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_64e19/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtime_usec);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_FLAGS failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5cce/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_d5cce.dir/build.make CMakeFiles/cmTC_d5cce.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_d5cce.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STAT_ST_FLAGS  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_d5cce.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:34: error: ‘struct stat’ has no member named ‘st_flags’
+    7 |   (void)sizeof(((struct stat *)0)->st_flags);
+      |                                  ^~
+gmake[4]: *** [CMakeFiles/cmTC_d5cce.dir/build.make:78 : CMakeFiles/cmTC_d5cce.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_d5cce/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_flags);
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATVFS_F_IOSIZE failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_577e4/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_577e4.dir/build.make CMakeFiles/cmTC_577e4.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_577e4.dir/src.c.o
+/usr/bin/cc -DHAVE_STRUCT_STATVFS_F_IOSIZE  -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_577e4.dir/src.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp/src.c:7:39: error: ‘struct statvfs’ has no member named ‘f_iosize’; did you mean ‘f_bsize’?
+    7 |   (void)sizeof(((struct statvfs *)0)->f_iosize);
+      |                                       ^~~~~~~~
+      |                                       f_bsize
+gmake[4]: *** [CMakeFiles/cmTC_577e4.dir/build.make:78 : CMakeFiles/cmTC_577e4.dir/src.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_577e4/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/statvfs.h>
+
+int main()
+{
+  (void)sizeof(((struct statvfs *)0)->f_iosize);
+  return 0;
+}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5a3bc/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_5a3bc.dir/build.make CMakeFiles/cmTC_5a3bc.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_5a3bc.dir/__INT64.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_5a3bc.dir/__INT64.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/__INT64.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/__INT64.c:27:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+   27 | #define SIZE (sizeof(__int64))
+      |                      ^~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/__INT64.c:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+gmake[4]: *** [CMakeFiles/cmTC_5a3bc.dir/build.make:78 : CMakeFiles/cmTC_5a3bc.dir/__INT64.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_5a3bc/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/__INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9630/fast && gmake[3] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+/usr/bin/gmake  -f CMakeFiles/cmTC_c9630.dir/build.make CMakeFiles/cmTC_c9630.dir/build
+gmake[4] : on entre dans le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_c9630.dir/UNSIGNED___INT64.c.o
+/usr/bin/cc   -Wall -Wextra -pipe -MD -MP -fno-gnu-unique -fPIC -DPIC -DNDEBUG -O3 -ffast-math -fdata-sections -ffunction-sections -mtune=generic -msse -msse2 -mfpmath=sse -fvisibility=hidden -DUSING_CARDINAL_NOT_RACK -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/include/simd-compat -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/include -msse -msse2 -msse3 -DZSTDLIB_VISIBILITY= -pthread -I/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/simde -DSIMDE_ACCURACY_PREFERENCE=0 -DSIMDE_FAST_CONVERSION_RANGE -DSIMDE_FAST_MATH -DSIMDE_FAST_NANS -DSIMDE_FAST_ROUND_MODE -DSIMDE_FAST_ROUND_TIES -std=gnu99  -fno-finite-math-only -fno-strict-aliasing -Wall -Wformat -Wformat-security -Wall -Wformat -Wformat-security -o CMakeFiles/cmTC_c9630.dir/UNSIGNED___INT64.c.o -c /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:27:31: error: expected ‘)’ before ‘__int64’
+   27 | #define SIZE (sizeof(unsigned __int64))
+      |                     ~         ^~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:27:31: error: expected ‘)’ before ‘__int64’
+   27 | #define SIZE (sizeof(unsigned __int64))
+      |                     ~         ^~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:30:12: note: in expansion of macro ‘SIZE’
+   30 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:27:31: error: expected ‘)’ before ‘__int64’
+   27 | #define SIZE (sizeof(unsigned __int64))
+      |                     ~         ^~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:31:12: note: in expansion of macro ‘SIZE’
+   31 |   ('0' + ((SIZE / 100)%10)),
+      |            ^~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:27:31: error: expected ‘)’ before ‘__int64’
+   27 | #define SIZE (sizeof(unsigned __int64))
+      |                     ~         ^~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:32:12: note: in expansion of macro ‘SIZE’
+   32 |   ('0' + ((SIZE / 10)%10)),
+      |            ^~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:27:31: error: expected ‘)’ before ‘__int64’
+   27 | #define SIZE (sizeof(unsigned __int64))
+      |                     ~         ^~~~~~~
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:33:12: note: in expansion of macro ‘SIZE’
+   33 |   ('0' +  (SIZE    % 10)),
+      |            ^~~~
+gmake[4]: *** [CMakeFiles/cmTC_c9630.dir/build.make:78 : CMakeFiles/cmTC_c9630.dir/UNSIGNED___INT64.c.o] Erreur 1
+gmake[4] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+gmake[3]: *** [Makefile:127 : cmTC_c9630/fast] Erreur 2
+gmake[3] : on quitte le répertoire « /home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CMakeTmp »
+
+
+/home/thib/Documents/Polytech/S8/PROJET/docs/Cardinal/src/Rack/dep/libarchive-3.4.3/build/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

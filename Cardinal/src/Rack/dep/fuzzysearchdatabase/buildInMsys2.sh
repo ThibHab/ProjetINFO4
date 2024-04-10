@@ -1,0 +1,1 @@
+g++ src/main.cpp -Wextra -Wshadow -Wall -Wpedantic -O3 -o testFuzzy.exe

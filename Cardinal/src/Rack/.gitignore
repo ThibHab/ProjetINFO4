@@ -9,13 +9,10 @@
 *.dSYM
 
 /Rack
-/dep
-/plugins
 /disabledplugins
 /build
 /dist
 /patches
-/presets
 /licenses
 /autosave
 /settings.json

@@ -1,0 +1,6 @@
+#platWin
+platWin/.vs
+platWin/x64
+
+#executable
+testFuzzy.exe
