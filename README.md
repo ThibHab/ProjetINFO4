@@ -54,14 +54,14 @@ Semaine 5
 
 Semaine 6
 
-    Thibaut : Continuation du travail sur la réalisation de connexions automatiques
+    Thibaut : Etablissement d'une connexion entre Python et Cardinal via socket traitement de données transmises
     Gwénolé : Formattage des outputs arduino, Ajout de la détection d'erreurs
     Yann : Travail sur la normalisation des inputs/outputs
 
 
 Semaine 7
 
-    Thibaut : Continuation du travail sur la réalisation de connexions automatiques
+    Thibaut : Finition du traitement de données envoyées par la socket
     Gwénolé + Yann : Mise en accord sur le format des échanges entre cardinal et l'arduino
 
 
