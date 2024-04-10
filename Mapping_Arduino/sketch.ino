@@ -10,7 +10,7 @@ void setup() {
   Serial.begin(9600); // start the serial output with a 9600 baud rate
   
   for (byte i = 0; i < io; i++) {
-    pinMode(buttonPins[i], INPUT);
+    pinMode(buttonPins[i], INPUT_PULLUP);
   }
   
   Serial.setTimeout(1); // set a timeout before the start
