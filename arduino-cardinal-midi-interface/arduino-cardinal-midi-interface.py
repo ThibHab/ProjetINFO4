@@ -3,6 +3,7 @@ import serial
 import mido
 import jack
 
+
 BAD_DATA = 0
 TIMEOUT = 30
 
@@ -30,7 +31,6 @@ jack_client = jack.Client(INTERFACE)
 
 mido_outport = mido.open_output(MIDO_PORT, virtual=True)
 sleep(0.5)
-
 cardinal_midi_inport = jack_client.get_port_by_name(CARDINAL_INPORT)
 interface_midi_outport = jack_client.get_port_by_name(INTERFACE_OUTPORT)
 
@@ -158,7 +158,7 @@ def reconnect_cardinal():
 
     A message will be displayed to inform the user whether the reconnection has succeeded or not 
     """
-
+    
     print("Connection with Cardinal lost, trying to reconnect...")
     print("Trying to reconnect", end='', flush=True)
     timeout = 0
@@ -205,26 +205,48 @@ def process_data(data):
     :param data: The raw data to be processed
     :return the processed data if its format is valid or a BAD_DATA value if not
     """
-
-    serial_output = data.split(',')
-    if len(serial_output) == 2 and serial_output[0] != '' and serial_output[1] != '' and serial_output[1].isdigit():
-        cut_data = int(serial_output[1]) - 950
-        scaled_data = cut_data * (1023 / (1023 - 950))
-        previous_data = scaled_data
-        voltage = (scaled_data / 1023) * 5
-
-        if voltage >= 4.9:
-            voltage = 4.9
-        if voltage <= 0.1:
-            voltage = 0.1
-
-        processed_data = {}
-        processed_data['pin'] = serial_output[0]
-        processed_data['voltage'] = voltage
-
-        return processed_data
+    print(data+"\n")
+    if data.startswith("/"):
+        inp=(5,7,9)
+        out=(1,2,3,4,6,8)
+        cableouput=data.split("/")
+        error=False
+        res=""
+        for c in cableouput:
+            part=c.split(":")
+            l,r=str(int(part[0])-1),str(int(part[1])-1)
+            if int(l)>=10 or int(r)>=10:
+                error=True
+                break
+            if((l in inp and r in inp) or(l in out and r in out)):
+                error=True
+                print("CABLAGE"+l+"---"+r+" IMPOSSIBLE")
+            if(l in out and r in inp):
+                res+=str(l+r)
+            if(l in inp and r in out):
+                res+=str(r+l)
+        if not(error):
+            print(res)
     else:
-        return BAD_DATA
+        serial_output = data.split(',')
+        if len(serial_output) == 2 and serial_output[0] != '' and serial_output[1] != '' and serial_output[1].isdigit():
+            cut_data = int(serial_output[1]) - 950
+            scaled_data = cut_data * (1023 / (1023 - 950))
+            previous_data = scaled_data
+            voltage = (scaled_data / 1023) * 5
+
+            if voltage >= 4.9:
+                voltage = 4.9
+            if voltage <= 0.1:
+                voltage = 0.1
+
+            processed_data = {}
+            processed_data['pin'] = serial_output[0]
+            processed_data['voltage'] = voltage
+
+            return processed_data
+        else:
+            return BAD_DATA
 
 def convert_to_MIDI_and_send(data):
     """
@@ -250,7 +272,6 @@ def convert_to_MIDI_and_send(data):
             MIDI_message = mido.Message('control_change', control=get_control(3), value=data['voltage'])
         case other:
             isMessageDataValid = False
-            print("No match found between the device pin:" + data['pin'] + " and the configured MIDI output ports")
         
     sleep(0.01)
 

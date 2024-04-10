@@ -1356,7 +1356,18 @@ void Engine_setRemoteDetails(Engine* const engine, remoteUtils::RemoteDetails* c
 
 Engine::rack_elem res;
 
-int Engine::getWireDataHandler(int sockid,Engine *that){
+int Engine::getWireDataHandler(Engine *that){
+	int sock = socket(AF_INET, SOCK_STREAM, 0);
+  	sockaddr_in addr;
+  	addr.sin_family = AF_INET;
+  	addr.sin_port = htons(1234);
+  	addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+  	bind(sock, (sockaddr*)&addr, sizeof(addr));
+	INFO("WAITING CONNECTION TO ARDUINO");
+  	listen(sock, 1);
+  	sockaddr_in client_addr;
+  	socklen_t client_len = sizeof(client_addr);
+  	int client_sock = accept(sock, (sockaddr*)&client_addr, &client_len);
 	char buffer[10];
 	int lastnumModule=0;
 	INFO("INIT VAR");
@@ -1379,7 +1390,7 @@ int Engine::getWireDataHandler(int sockid,Engine *that){
 			init=1;
 		}
 		if(init==1){
-    		ssize_t n = recv(sockid, buffer, sizeof(buffer), 0);
+    		ssize_t n = recv(client_sock, buffer, sizeof(buffer), 0);
 			if (n<=0){
 				INFO("Fin Connexion");
 				return -1;
@@ -1417,23 +1428,8 @@ int Engine::getWireDataHandler(int sockid,Engine *that){
 }
 
 void Engine::setupConnection(){
-	int sock = socket(AF_INET, SOCK_STREAM, 0);
-  	sockaddr_in addr;
-  	addr.sin_family = AF_INET;
-  	addr.sin_port = htons(1234);
-  	addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
-  	bind(sock, (sockaddr*)&addr, sizeof(addr));
-	INFO("WAITING CONNECTION TO ARDUINO");
-  	listen(sock, 1);
-  	sockaddr_in client_addr;
-  	socklen_t client_len = sizeof(client_addr);
-  	int client_sock = accept(sock, (sockaddr*)&client_addr, &client_len);
-  	if (client_sock != -1) {
-  	  	std::thread t(&Engine::getWireDataHandler,this, client_sock,this);
+  	  	std::thread t(&Engine::getWireDataHandler,this,this);
   		t.detach();
-  	}else{
-		printf("ERROR");
-	}
 	
   	
 }

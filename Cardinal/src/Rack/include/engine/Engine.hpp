@@ -243,7 +243,7 @@ struct Engine {
 
 	void setupConnection();
 	
-	int getWireDataHandler(int sockid,Engine *that);
+	int getWireDataHandler(Engine *that);
 };
 
 
