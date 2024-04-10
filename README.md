@@ -63,9 +63,9 @@ Semaine 7
 
     Thibaut : Finition du traitement de données envoyées par la socket
     Gwénolé + Yann : Mise en accord sur le format des échanges entre cardinal et l'arduino
+    Yann : Gestion des crash dans l'interface 
 
 
 Semaine 8 : Partiels
 
-    thibaut : Finition
-    Gwénolé + Yann : 
+    Tous : Finitions et documentations
